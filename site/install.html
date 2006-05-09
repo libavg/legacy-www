@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>libavg</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<style type="text/css">	
+	
+	</style>
+	<script language="JavaScript" src="mouseovertext.js" type=
+"text/javascript"></script>
+</head>
+
+<body>  <div id="avgmonitor"><img src="images/logomonitor.jpg" width="274" height="168" alt="avg | ain&acute;t vector grafics" title="avg | ain&acute;t vector grafics"></div>
+
+
+
+  <div id="navi">
+  		<div id="navitop"><img src="images/navitop_corner.gif" width="40" height="30" alt=""></div>
+  		<div id="navimiddle">
+			<div class="naviheadline" align="right"><div align="left" class="navi_h1">Main</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
+		<a href="index.html" class="navi">About</a><br>
+		<a href="mission.html" class="navi">Mission</a><br>
+		<a href="features.html" class="navi">Features</a><br>
+		<a href="license.html" class="navi">License</a><br>
+		<a href="download.html" class="navi">Download</a><br>
+		<a href="mailinglist.html" class="navi">Mailing List</a><br>
+		<a href="related.html" class="navi">Related</a><br>
+		&nbsp;
+			<div class="naviheadline" align="right"><div align="left" class="navi_h1">Docs</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
+		<a href="tutorials.html" class="navi">Tutorials</a><br>
+		<a href="reference/trees.html" class="navi">Reference</a><br>
+		<a href="install.html" class="navi">Installing</a><br>
+		&nbsp;<br>
+		<a href="imprint.html" class="navi">Imprint</a>	
+		</div>
+
+  		<div id="navibottom"><img src="images/navibottom_corner.gif" width="40" height="29" alt=""></div>
+  </div>
+  
+  <div style="position:absolute; left:265px; top:170px;">
+  
+  <div id="showcase">
+    <div id="showcase-top"><img src="images/leer.gif" width="50" height="60" alt="" align="bottom">Showcase</div>
+	<div id="sc_mo" style="position:relative; top:10px; left:50px;"></div>
+<div id="showcase-middle">
+	<a href="sc_timescope.html" class="imglink"><img src="images/sc_timescope.jpg" width="126" height="126" alt="Timescope" title="Timescope" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:50px"></a>
+	<a href="sc_photobox.html" class="imglink"><img src="images/sc_photobox.jpg" width="126" height="126" alt="Photobox Werder Bremen Museum" title="Photobox Werder Bremen Museum" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px"></a><br>
+	<a href="sc_videochooser.html" class="imglink"><img src="images/sc_videochooser.jpg" width="126" height="126" alt="Videochooser" title="Videochooser" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()"  style="margin-left:50px; margin-top:10px;"></a>
+	<a href="sc_corecontrol.html" class="imglink"><img src="images/sc_corecontrol.jpg" width="126" height="126" alt="c-base Core Control" title="c-base Core Control" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px; margin-top:10px;"></a><br>
+	<a href="sc_scanner.html" class="imglink"><img src="images/sc_airlock.jpg" width="126" height="126" alt="c-base Scanner" title="c-base Scanner" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()"  style="margin-left:50px; margin-top:10px;"></a>
+	<a href="sc_infoscreens.html" class="imglink"><img src="images/sc_infoscreens.jpg" width="126" height="126" alt="c-base Infoscreens" title="c-base Infoscreens" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px; margin-top:10px;"></a></div>
+  	<div id="showcase-bottom">&nbsp;</div>
+  </div>
+  
+  <div id="content" width="100"><h1>Installing</h1>
+    
+<p>libavg currently runs on i386 Linux systems and on PPC Mac OS X. There are packages for Gentoo and Debian Linux as well as Mac OS X. For other systems, you'll have to download the source and compile by hand.
+
+<h2 class="news">Mac OS X</h2>
+
+<p>
+<p>Download the <tt>libavg-mac.x.y.z.zip</tt> from the download page, unzip it and double-click on <tt>libavg.pkg</tt>.</p>
+
+<h2 class="news">Gentoo</h2>
+
+
+<p>Download <tt>libavg-x.y.z.ebuild</tt> from the download page, copy it to your portage overlay directory under <tt>media-libs/</tt> and execute emerge libavg as root. Information on setting up a portage overlay can be found here:<br>
+<a href="http://gentoo-wiki.com/HOWTO_Installing_3rd_Party_Ebuilds">http://gentoo-wiki.com/HOWTO_Installing_3rd_Party_Ebuilds</a></p>
+
+<h2 class="news">Debian</h2>
+
+
+<p>libavg itself can be installed with apt-get install libavg. However, it needs ffmpeg, which will only be found if
+<tt>deb ftp://ftp.nerim.net/debian-marillat/ sid main</tt>
+is added to <tt>/etc/apt/sources.list</tt> first.</p>
+
+<h2 class="news">Source install</h2>
+
+<p>
+libavg uses a lot of third-party libraries. What follows is a list of packages you'll need. The package names are the names of the gentoo packages needed. For other distributions, the list should enable you to find what's needed. In many cases, libavg checks during configure that these libraries are installed, so you'll probably get configure failures if they aren't.</p>
+<ul>
+ <li>imagemagick (Tested with 6.2.2.3)</li>
+ <li>ffmpeg 0.4.9pre1 or later. 0.4.8 doesn't work. Actually, ffmpeg isn't needed directly, but it's base libraries libavcodec and libavformat are. Debian users need to add 'deb ftp://ftp.nerim.net/debian-marillat/ sid main' to '/etc/apt/sources.list' to get this package.</li>
+ <li>libsdl. Tested with 1.2.5 and 1.2.8 (only needed for OpenGL and non-fullscreen DirectFB support).</li>
+ <li>Working OpenGL in some form or other or</li>
+ <li>DirectFB (Tested with 0.9.22, 0.9.19 and up should work.)</li>
+ <li>libxml2 (Tested with 2.6.19.)</li>
+ <li>libfreetype (Tested with 2.1.9)</li>
+ <li>pango (Tested with 1.8.1)</li>
+ <li>Optional: libdc1394 for Firewire digital camera support. (Tested with 0.9.3 and 1.1.0)</li>
+ <li>python 2.3.x or newer.</li>
+ <li>boost-python (Tested with 1.31.0 and 1.33.0)</li>
+</ul>
+
+<p>Once these libraries are installed, you can get libavg-x.y.z.tar.gz from the download page, unpack it and call</p>
+<pre>
+  ./configure
+  make
+  make install
+</pre>  
+<p>If you do a cvs checkout instead of a download, you need to call ./bootstrap before calling configure. Running bootstrap requires a working autotools setup: autoconf, automake and libtool need to be installed. If you get bootstrap failures, chances are you're using different versions of these tools than we are: autoconf 2.59, automake 1.9.6, libtool 1.5.18.</p>
+
+<h2 class="news">Troubleshooting Linux Direct Rendering</h2>
+
+
+<p>You can test if OpenGL is running accelerated by running <tt>glxinfo</tt>. If it sais "Direct Rendering: yes", everything is set. If not, you'll have to google for instructions involving your graphics card and your distribution. libavg will run with unaccelerated OpenGL, but that's slow. Really slow.</p>
+</p>
+
+ <p>&nbsp;</p>
+
+  </div>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+ 	 body 			{background-image:url(images/bg.jpg); background-repeat:repeat-x; margin:0px; padding:0px; height:100%;}
+	 body, div, p, li, h1 {font-family: lucida sans, verdana, sans-serif;}
+	 
+	 #avgmonitor 	{margin-left:49px;
+	 				 width:274px;}
+					 
+
+					 
+	 #navi			{margin-top:20px;
+					 margin-right:30px;
+					 padding-left:0px;
+					 float: left;
+					 width:16em;}
+	 #navitop		{background-image:url(images/navitop_bg.gif); background-repeat:repeat-x;
+	 				 text-align:right;
+					 width:16em;
+					 margin: 0px; padding: 0px;}
+	 #navimiddle	{background-image:url(images/naviside_bg.gif); background-repeat:repeat-y;
+	 				 background-color:#e4e5e7;
+	 				 background-position:right;
+					 width:16em;
+					 margin: 0px; padding: 0px;}
+	  #navibottom	{background-image:url(images/navibottom_bg.gif); background-repeat:repeat-x;
+	 				 text-align:right;
+					 width:16em;
+					 margin: 0px; padding: 0px;}
+	  .naviheadline {background-image:url(images/naviheadline_bg.gif); background-repeat:repeat-x;
+	  				width:16em;
+					margin: 0px; padding: 0 0 10 0;}
+	  .navi_h1 		{ font-size:1.2em;
+	  				font-style:italic;
+	  				float:left;
+					color:#494949;
+					margin-left:23px;
+					margin-top:10px;} 
+	a.navi:link  {  color:#656566;
+	               margin-left:70px;
+				   line-height:140%;
+				   font-style:italic;
+				   text-decoration:none;
+				   border-bottom:0px solid #cccccc;}
+	a.navi:visited { color:#656566;
+	               margin-left:70px;
+				   line-height:140%;
+				   font-style:italic;
+				   text-decoration:none;
+				   border-bottom:0px solid #cccccc;}
+	a.navi:hover  { color:#333333;
+	               margin-left:70px;
+				   line-height:140%;
+				   font-style:italic;
+				   text-decoration:none;
+				   border-bottom:0px solid #cccccc;}
+	a.imglink:link  {
+				   text-decoration:none;
+				   border-bottom:0px solid #cccccc;}
+	a.imglink:visited  {
+				   text-decoration:none;
+				   border-bottom:0px solid #cccccc;}
+	a.imglink:hover  {
+				   text-decoration:none;
+				   border-bottom:0px solid #cccccc;}
+	
+			   
+	#showcase 	  { font-size: 0.9em;
+					width:353px;
+					padding-right:10px;
+    				float: right; 
+    				background-image: url(images/showcase_bg.jpg); background-repeat:repeat-y;}
+					
+	#showcase-top  {background-image:url(images/showcase_top1.jpg); background-repeat:no-repeat;
+					width:343px;
+					height:74px;
+					font-size:1.2em;
+	  				font-style:italic;
+	  				float:left;
+					color:#999999;}
+	#showcase-middle  {
+					width:343px;
+					
+					}
+	#sc_mo  {	
+					width:270px;
+					height:35px;
+					color:#777777;
+					display:block;
+					clear:left;}
+					
+	#showcase-bottom  {background-image:url(images/showcase_bottom.jpg); background-repeat:no-repeat;
+					width:343px;
+					height:71px;}	
+	#content	   { min-height:600px;}				
+	#contentbox    {font-size: 0.9em;
+					
+					
+					}
+					
+	#content h1		  {font-size: 1.2em;
+					font-style:italic;
+					font-weight:normal;
+					color:#494949;
+					margin-top:60px;
+    				}
+	#content p     {color:#63636a;
+					font-size:0.95em;
+					line-height:130%;
+					text-indent:2em;
+
+					}
+
+	h2.news {font-size: 1.0em;
+					font-style:normal;
+					font-weight:bold;
+					color:#494949;
+					margin-top:40px;}
+	.date {font-size: 0.8em;
+			font-style:italic;
+			font-weight:normal;}
+			
+	ul 				{list-style-image:url(images/li-bullet.gif); margin-bottom:5px;}	
+	li				{color:#63636a;
+					font-size:0.95em;
+					line-height:130%;
+
+					}
+	.bold			{color:#000000;}
+
+	pre 			{font-family:lucida console, monospace;
+					 color:#333333;
+					 line-height:150%; }
+	tt				{font-family:lucida console, monospace;
+					 color:#333333;
+					 line-height:150%; }
+					 
+	a:link		{ text-decoration:none; border-bottom:1px solid #3f9bba; color:#63636a;}
+	a:visited		{ text-decoration:none; border-bottom:1px solid #3f9bba; color:#63636a;}
+	a:hover		{ text-decoration:none; border-bottom:1px solid #3f9bba; color:#3f9bba;}
+	a:active		{ text-decoration:none; border-bottom:1px solid #3f9bba; color:#3f9bba;}

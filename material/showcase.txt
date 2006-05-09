@@ -1,0 +1,86 @@
+libavg.de - Showcase
+
+
+timescope       c-base Core Control
+Photobox        c-base Scanner
+Videochooser    c-base Infoscreens
+
+
+
+timescope
+---------
+
+timescope is a tourist telescope with a twist: Viewers that look into it can use a button to choose whether to view the current happenings in front of the telescope or scenes from a different time. The images are superimposed so that the direction the user looks at is always correct, no matter in which direction the timescope is pointing: The real image fades into the virtual image and back without a change in perspective. It can be used in a wide variety of settings, for instance at tourist sites to enable visitors to look at the past of the sites or at building sites to show past use of the site and the future building. timescope uses libavg internally for the visualization, the interface to the internal camera and the other hardware components.
+
+timescope is a product development of the ART+COM AG [www.artcom.de].
+
+
+
+Photobox Werder Bremen Museum
+-----------------------------
+
+The Photobox in the Werder Bremen Museum allows visitors to take photographs of themselves and merge them with images of the soccer club's stars. The user can choose between several star photos to be composited into using greenscreen technology. Several photos are taken, and the user selects the best one to be printed immediately on a connected printer. Even the lighting of the original photo is re-enacted by computer-controlled lights in the booth the Photobox is in.
+
+Besides some custom image processing and printer interface code, the Photobox was built using libavg. It uses a 1024x768 firewire camera for the photos and interfaces to a coin rejector and the lights using a serial velleman board (see [Related]).
+
+The Photobox was built by the marplon4 GbR [www.marplon4.de].
+
+
+
+Videochooser
+------------
+
+The Videochooser is a small demo that showcases the video playback capabilities of libavg. It shows all videos in a directory in a long line in the middle of the screen. The size of the videos is controlled by the vertical position of the mouse. The horizontal mouse position determines which part of the line is actually shown on the screen. When the mouse is at the screen bottom, the Videochooser shows eleven videos. When it's a the top, just one fullscreen video is shown. All visible videos are running, while those not on the screen are paused.
+
+The Videochooser can be checked out using subversion:
+
+   svn co https://www.libavg.de/svn/trunk/samples/videochooser
+
+As-is, it looks for the videos in a hard-coded directory. To get it to run, you need to change the line that reads
+
+  videoDir = "/home/uzadow/libavg/libavg/src/test/enterprise/"
+
+to point to a directory that contains only videos.
+
+
+
+c-base Core Control
+-------------------
+
+In old air-raid shelters underneath Berlin Alexanderplatz, members of the c-base space station ([http://www.c-base.org]) discovered parts of its drive mechanism. We were able to discern the workings of the energy store, the moebius band accumulator. Through the moebius mechanism, the accumulator is able to store infinite amounts of energy. We displayed the uncovered parts along with a description of the findings in the 2003 exhibition 'Paradies' ([http://www.paradiesprojekt.de]), in which over 200 artists used the many rooms of the bunker to show their vision of paradise. 
+
+The core control application that displayed the current drive mechanism was programmed using an early version of libavg.
+
+
+
+c-base Scanner
+--------------
+
+In the entry room to the c-base ([www.c-base.org]), one of the airlocks of the space station was reconstructed. The airlock includes a hand and a body scanner that determine if a visitor is human or alien and generates an alarm if he is infected with dangerous viruses. The installation involves some wood, many small LEDs, a few photo sensors, two rotating alarm lights, four speakers, a touchscreen, an old motor to drive the body scanner and lots of old circuit boards and pipes. Like most of the c-base and its air lock, the scanner was a community project and as such involved the free time of lots of great people. Among others, the soldering and electronics was mostly done by Thilo Graf, most of the screen design was done by Marten Suhr and Ulrich von Zadow did the programming. The images that are used in the body scanner come from the visible human project ([http://www.nlm.nih.gov/research/visible/visible_human.html]) and are used with kind permission.
+
+The scanner software runs without the accompanying hardware and is available via subversion at 
+
+  svn co https://www.libavg.de/svn/trunk/scanner/
+
+Be aware that this is a 90 mb checkout, since it contains all the media used.
+
+
+
+c-base Infoscreens
+------------------
+
+To keep visitors to the c-base space station informed with respect to the conditions that prevail in the station, six infoscreens were mounted in the entrance airlock. Besides a welcome message in twenty-odd languages - including ancient Egyptian, Chinese and the Finnish message that's shown in the screenshot - the screens show the estimated time to takeoff, a floor plan, dates on atmospheric conditions and upcoming event information. Screen design by Claudia Krummenacher, programming by Ulrich von Zadow, Starsoda and c-wars ads by Marten Suhr, translations of 'Welcome aboard the c-base' by too many people to be listed here.
+
+The Infoscreen software can be downloaded via subversion at 
+
+  svn co https://www.libavg.de/svn/trunk/eingangsmonitore
+
+The checkout contains all the media and media used. It is about 45 mb large.
+
+
+
+Bildmaterial:
+
+http://www.libavg.de/libavg_material.zip
+
+http://www.artcom.de/index.php?option=com_acprojects&page=5&id=38&Itemid=115&details=&imageRequestToggle=0&lang=en&selectedimage=
