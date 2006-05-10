@@ -89,7 +89,10 @@
 	#showcase-bottom  {background-image:url(images/showcase_bottom.jpg); background-repeat:no-repeat;
 					width:343px;
 					height:71px;}	
-	#content	   { min-height:600px;}				
+	#content	   { min-height:600px;
+	                padding-right:20px;
+	                padding-bottom:20px;}
+	
 	#contentbox    {font-size: 0.9em;
 					
 					
@@ -105,7 +108,8 @@
 					font-size:0.95em;
 					line-height:130%;
 					text-indent:2em;
-
+					}
+	#content p.noindent {text-indent:0em;
 					}
 
 	h2.news {font-size: 1.0em;

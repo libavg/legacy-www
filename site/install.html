@@ -25,10 +25,9 @@
 		<a href="license.html" class="navi">License</a><br>
 		<a href="download.html" class="navi">Download</a><br>
 		<a href="mailinglist.html" class="navi">Mailing List</a><br>
-		<a href="related.html" class="navi">Related</a><br>
 		&nbsp;
 			<div class="naviheadline" align="right"><div align="left" class="navi_h1">Docs</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
-		<a href="tutorials.html" class="navi">Tutorials</a><br>
+		<a href="wiki/index.php/Main_Page" class="navi">Tutorials</a><br>
 		<a href="reference/trees.html" class="navi">Reference</a><br>
 		<a href="install.html" class="navi">Installing</a><br>
 		&nbsp;<br>
@@ -44,7 +43,7 @@
     <div id="showcase-top"><img src="images/leer.gif" width="50" height="60" alt="" align="bottom">Showcase</div>
 	<div id="sc_mo" style="position:relative; top:10px; left:50px;"></div>
 <div id="showcase-middle">
-	<a href="sc_timescope.html" class="imglink"><img src="images/sc_timescope.jpg" width="126" height="126" alt="Timescope" title="Timescope" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:50px"></a>
+	<a href="sc_timescope.html" class="imglink"><img src="images/sc_timescope.jpg" width="126" height="126" alt="timescope" title="timescope" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:50px"></a>
 	<a href="sc_photobox.html" class="imglink"><img src="images/sc_photobox.jpg" width="126" height="126" alt="Photobox Werder Bremen Museum" title="Photobox Werder Bremen Museum" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px"></a><br>
 	<a href="sc_videochooser.html" class="imglink"><img src="images/sc_videochooser.jpg" width="126" height="126" alt="Videochooser" title="Videochooser" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()"  style="margin-left:50px; margin-top:10px;"></a>
 	<a href="sc_corecontrol.html" class="imglink"><img src="images/sc_corecontrol.jpg" width="126" height="126" alt="c-base Core Control" title="c-base Core Control" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px; margin-top:10px;"></a><br>
@@ -61,17 +60,18 @@
 
 <p>
 <p>Download the <tt>libavg-mac.x.y.z.zip</tt> from the download page, unzip it and double-click on <tt>libavg.pkg</tt>.</p>
+<p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/ site-packages/avg/test</tt> and call <tt>./Test.py</tt>. You should see lots of test graphics on the screen.
 
 <h2 class="news">Gentoo</h2>
 
 
 <p>Download <tt>libavg-x.y.z.ebuild</tt> from the download page, copy it to your portage overlay directory under <tt>media-libs/</tt> and execute emerge libavg as root. Information on setting up a portage overlay can be found here:<br>
-<a href="http://gentoo-wiki.com/HOWTO_Installing_3rd_Party_Ebuilds">http://gentoo-wiki.com/HOWTO_Installing_3rd_Party_Ebuilds</a></p>
+<a href="http://gentoo-wiki.com/HOWTO_Installing_3rd_Party_Ebuilds">http://gentoo-wiki.com/ HOWTO_Installing_3rd_Party_Ebuilds</a></p>
 
 <h2 class="news">Debian</h2>
 
 
-<p>libavg itself can be installed with apt-get install libavg. However, it needs ffmpeg, which will only be found if
+<p>libavg itself can be installed with apt-get install python-libavg. However, it needs ffmpeg, which will only be found if
 <tt>deb ftp://ftp.nerim.net/debian-marillat/ sid main</tt>
 is added to <tt>/etc/apt/sources.list</tt> first.</p>
 
