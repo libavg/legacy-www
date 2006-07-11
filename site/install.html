@@ -60,7 +60,7 @@
 
 <p>
 <p>Download the <tt>libavg-mac.x.y.z.zip</tt> from the download page, unzip it and double-click on <tt>libavg.pkg</tt>.</p>
-<p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/ site-packages/avg/test</tt> and call <tt>./Test.py</tt>. You should see lots of test graphics on the screen.
+<p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/site-packages/avg/test</tt> and call <tt>./Test.py</tt>. You should see lots of test graphics on the screen.
 
 <h2 class="news">Gentoo</h2>
 
@@ -72,7 +72,7 @@
 
 
 <p>libavg itself can be installed with apt-get install python-libavg. However, it needs ffmpeg, which will only be found if
-<tt>deb ftp://ftp.nerim.net/debian-marillat/ sid main</tt>
+<tt>deb http://www.debian-multimedia.org sid main</tt>
 is added to <tt>/etc/apt/sources.list</tt> first.</p>
 
 <h2 class="news">Source install</h2>
@@ -81,7 +81,7 @@ is added to <tt>/etc/apt/sources.list</tt> first.</p>
 libavg uses a lot of third-party libraries. What follows is a list of packages you'll need. The package names are the names of the gentoo packages needed. For other distributions, the list should enable you to find what's needed. In many cases, libavg checks during configure that these libraries are installed, so you'll probably get configure failures if they aren't.</p>
 <ul>
  <li>imagemagick (Tested with 6.2.2.3)</li>
- <li>ffmpeg 0.4.9pre1 or later. 0.4.8 doesn't work. Actually, ffmpeg isn't needed directly, but it's base libraries libavcodec and libavformat are. Debian users need to add 'deb ftp://ftp.nerim.net/debian-marillat/ sid main' to '/etc/apt/sources.list' to get this package.</li>
+ <li>ffmpeg 0.4.9pre1 or later. 0.4.8 doesn't work. Actually, ffmpeg isn't needed directly, but it's base libraries libavcodec and libavformat are. Debian users need to add 'deb http://www.debian-multimedia.org sid main' to '/etc/apt/sources.list' to get this package.</li>
  <li>libsdl. Tested with 1.2.5 and 1.2.8 (only needed for OpenGL and non-fullscreen DirectFB support).</li>
  <li>Working OpenGL in some form or other or</li>
  <li>DirectFB (Tested with 0.9.22, 0.9.19 and up should work.)</li>
@@ -93,6 +93,9 @@ libavg uses a lot of third-party libraries. What follows is a list of packages y
  <li>boost-python (Tested with 1.31.0 and 1.33.0)</li>
 </ul>
 
+<p> Debian users can use the depends line in the debian package and do an appropriate apt-get install:
+<p>
+libavcodeccvs51-dev | libavcodeccvs-dev | libavcodec2-dev, libboost-python-dev, libdc1394-13-dev, libfaac-dev, libfaad2-dev, liblame-dev, liblzo-dev, libmagick++9-dev | libmagick++6-dev, libpango1.0-dev, libsdl1.2-dev, libx264-dev, libxml2-dev, libxvidcore4-dev, libxxf86vm-dev
 <p>Once these libraries are installed, you can get libavg-x.y.z.tar.gz from the download page, unpack it and call</p>
 <pre>
   ./configure
