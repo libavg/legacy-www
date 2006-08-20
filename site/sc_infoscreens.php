@@ -11,46 +11,9 @@
 "text/javascript"></script>
 </head>
 
-<body>  <div id="avgmonitor"><img src="images/logomonitor.jpg" width="274" height="168" alt="avg | ain&acute;t vector grafics" title="avg | ain&acute;t vector grafics"></div>
-
-
-
-  <div id="navi">
-  		<div id="navitop"><img src="images/navitop_corner.gif" width="40" height="30" alt=""></div>
-  		<div id="navimiddle">
-			<div class="naviheadline" align="right"><div align="left" class="navi_h1">Main</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
-		<a href="index.html" class="navi">About</a><br>
-		<a href="mission.html" class="navi">Mission</a><br>
-		<a href="features.html" class="navi">Features</a><br>
-		<a href="license.html" class="navi">License</a><br>
-		<a href="download.html" class="navi">Download</a><br>
-		<a href="mailinglist.html" class="navi">Mailing List</a><br>
-		&nbsp;
-			<div class="naviheadline" align="right"><div align="left" class="navi_h1">Docs</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
-		<a href="wiki/index.php/Main_Page" class="navi">Tutorials</a><br>
-		<a href="reference/trees.html" class="navi">Reference</a><br>
-		<a href="install.html" class="navi">Installing</a><br>
-		&nbsp;<br>
-		<a href="imprint.html" class="navi">Imprint</a>	
-		</div>
-
-  		<div id="navibottom"><img src="images/navibottom_corner.gif" width="40" height="29" alt=""></div>
-  </div>
-  
-  <div style="position:absolute; left:265px; top:170px;">
-  
-  <div id="showcase">
-    <div id="showcase-top"><img src="images/leer.gif" width="50" height="60" alt="" align="bottom">Showcase</div>
-	<div id="sc_mo" style="position:relative; top:10px; left:50px;"></div>
-<div id="showcase-middle">
-	<a href="sc_timescope.html" class="imglink"><img src="images/sc_timescope.jpg" width="126" height="126" alt="timescope" title="timescope" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:50px"></a>
-	<a href="sc_photobox.html" class="imglink"><img src="images/sc_photobox.jpg" width="126" height="126" alt="Photobox Werder Bremen Museum" title="Photobox Werder Bremen Museum" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px"></a><br>
-	<a href="sc_videochooser.html" class="imglink"><img src="images/sc_videochooser.jpg" width="126" height="126" alt="Videochooser" title="Videochooser" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()"  style="margin-left:50px; margin-top:10px;"></a>
-	<a href="sc_corecontrol.html" class="imglink"><img src="images/sc_corecontrol.jpg" width="126" height="126" alt="c-base Core Control" title="c-base Core Control" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px; margin-top:10px;"></a><br>
-	<a href="sc_scanner.html" class="imglink"><img src="images/sc_airlock.jpg" width="126" height="126" alt="c-base Scanner" title="c-base Scanner" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()"  style="margin-left:50px; margin-top:10px;"></a>
-	<a href="sc_infoscreens.html" class="imglink"><img src="images/sc_infoscreens.jpg" width="126" height="126" alt="c-base Infoscreens" title="c-base Infoscreens" class="sc-pic" border="0" onmouseover="domouseover(this.alt)" onmouseout="domouseout()" style="margin-left:15px; margin-top:10px;"></a></div>
-  	<div id="showcase-bottom">&nbsp;</div>
-  </div>
+<body>
+  <? include "navi.php"?>
+  <? include "showcase.php"?> 
   <div id="content" width="100"><h1>Showcase</h1>
   <h2 class="news">c-base Infoscreens</h2>
 

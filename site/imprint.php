@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>libavg</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<style type="text/css">	
+	
+	</style>
+	<script language="JavaScript" src="mouseovertext.js" type=
+"text/javascript"></script>
+</head>
+
+<body>
+  <? include "navi.php"?>
+  <? include "showcase.php"?> 
+  <div id="content" width="100"><h1>Imprint</h1>
+    <p>www.libavg.de is maintained by Ulrich von Zadow, Torstrasse 137, 10119 Berlin, Tel 030-28042362.
+    </p>
+    <p>Site design by Macro (<a href="http://www.macrone.de">http://www.macrone.de</a>).
+    </p>
+    <p>Hosting and administration by ces at datenhain.de.
+    </p>
+  </div>
+  
+</div>
+
+</body>
+</html>

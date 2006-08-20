@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>libavg</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<style type="text/css">	
+	
+	</style>
+	<script language="JavaScript" src="mouseovertext.js" type=
+"text/javascript"></script>
+</head>
+
+<body>
+  <? include "navi.php"?>
+  <? include "showcase.php"?> 
+  <div id="content" width="100"><h1>License</h1>
+    
+<p>libavg is open source software. It is available under the <a href="http://www.gnu.org/copyleft/lesser.html">GNU Lesser General Public License (LGPL)</a>  version 2.1 or newer. Our main intent in distributing it under this license is to allow all commercial and non-commercial entities to use the library, provided they give all improvements to libavg that are made for one project back to the community.</p>
+<p>
+If you have any questions regarding licensing or if you require a different license, please contact the copyright holder, Ulrich von Zadow, directly.
+	</p>
+  </div>
+  
+</div>
+
+</body>
+</html>
