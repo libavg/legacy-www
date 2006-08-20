@@ -54,13 +54,13 @@
   
   <div id="content" width="100"><h1>Installing</h1>
     
-<p>libavg currently runs on i386 Linux systems and on PPC Mac OS X. There are packages for Gentoo and Debian Linux as well as Mac OS X. For other systems, you'll have to download the source and compile by hand.
+<p>libavg currently runs on i386 and PPC systems running Linux or Mac OS X. There are packages for Gentoo and Debian Linux as well as Mac OS X. For other systems, you'll have to download the source and compile by hand.
 
 <h2 class="news">Mac OS X</h2>
 
 <p>
-<p>Download the <tt>libavg-mac.x.y.z.zip</tt> from the download page, unzip it and double-click on <tt>libavg.pkg</tt>.</p>
-<p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/site-packages/avg/test</tt> and call <tt>./Test.py</tt>. You should see lots of test graphics on the screen.
+<p>Download <tt>libavg-mac.x.y.z.zip</tt> from the download page, unzip it and double-click on <tt>libavg.pkg</tt>.</p>
+<p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/site-packages/avg/test</tt> and call <tt>./Test.py</tt>. You should see some test graphics flicker on the screen. The last message in the terminal should read 'OK'.
 
 <h2 class="news">Gentoo</h2>
 
@@ -81,10 +81,10 @@ is added to <tt>/etc/apt/sources.list</tt> first.</p>
 libavg uses a lot of third-party libraries. What follows is a list of packages you'll need. The package names are the names of the gentoo packages needed. For other distributions, the list should enable you to find what's needed. In many cases, libavg checks during configure that these libraries are installed, so you'll probably get configure failures if they aren't.</p>
 <ul>
  <li>imagemagick (Tested with 6.2.2.3)</li>
- <li>ffmpeg 0.4.9pre1 or later. 0.4.8 doesn't work. Actually, ffmpeg isn't needed directly, but it's base libraries libavcodec and libavformat are. Debian users need to add 'deb http://www.debian-multimedia.org sid main' to '/etc/apt/sources.list' to get this package.</li>
+ <li>ffmpeg 0.4.9pre1 or later. 0.4.8 doesn't work. Actually, ffmpeg isn't needed directly, but it's base libraries libavcodec, libavformat and libavutil are. Debian users need to add 'deb http://www.debian-multimedia.org sid main' to '/etc/apt/sources.list' to get this package.</li>
  <li>libsdl. Tested with 1.2.5 and 1.2.8 (only needed for OpenGL and non-fullscreen DirectFB support).</li>
  <li>Working OpenGL in some form or other or</li>
- <li>DirectFB (Tested with 0.9.22, 0.9.19 and up should work.)</li>
+ <li>Optional: DirectFB (Tested with 0.9.22, 0.9.19 and up should work.)</li>
  <li>libxml2 (Tested with 2.6.19.)</li>
  <li>libfreetype (Tested with 2.1.9)</li>
  <li>pango (Tested with 1.8.1)</li>
