@@ -41,10 +41,14 @@
  <li>Mac OS X package: <a href="libavg-mac.0.5.7.zip">libavg-mac.0.5.7.zip</a></li>
 </ul>
 
-<p>cvs access:</p>
-<ul>
- <li>See  <a href="http://sourceforge.net/cvs/?group_id=75968">http://sourceforge.net/cvs/?group_id=75968</a></li>
-</ul>
+<p>Subversion access:</p>
+<p>
+Access to the current development source code is available using 
+<a href="">subversion</a>. You can check out the complete development 
+source code using <tt>svn co https://www.libavg.de/svn/trunk/libavg</tt></li>. 
+Browsing the 
+<a href="https://www.libavg.de/websvn/listing.php?repname=libavg&path=%2Ftrunk%2F&rev=0&sc=0">subversion repository</a>
+online is also possible
 
  <p><img src="images/leer.gif" width="1" height="300" alt="">&nbsp;</p>
 
