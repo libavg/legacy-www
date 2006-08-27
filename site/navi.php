@@ -9,11 +9,11 @@
     <a href="features.php" class="navi">Features</a><br>
     <a href="license.php" class="navi">License</a><br>
     <a href="download.php" class="navi">Download</a><br>
-    <a href="mailinglist.php" class="navi">Mailing List</a><br>
+    <a href="feedback.php" class="navi">Feedback</a><br>
     &nbsp;
     <div class="naviheadline" align="right"><div align="left" class="navi_h1">Docs</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
     <a href="wiki/index.php/Main_Page" class="navi">Tutorials</a><br>
-    <a href="reference/trees.php" class="navi">Reference</a><br>
+    <a href="reference/trees.html" class="navi">Reference</a><br>
     <a href="install.php" class="navi">Installing</a><br>
     &nbsp;<br>
     <a href="imprint.php" class="navi">Imprint</a>	

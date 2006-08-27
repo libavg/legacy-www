@@ -15,9 +15,9 @@
   <? include "navi.php"?>
   <? include "showcase.php"?> 
   
-  <div id="content" width="100"><h1>Mailing List</h1>
-    
-<p>Two mailing lists have been set up for libavg. You can subscribe here: <br>
+  <div id="content" width="100"><h1>Feedback</h1>
+<p>Feedback on libavg is very welcome. For this reason, two mailing lists have been set up.
+You can subscribe here: <br>
 <a href="https://mail.datenhain.de/mailman/listinfo/libavg-users">https://mail.datenhain.de/mailman/listinfo/libavg-users</a>.<br>
 <a href="https://mail.datenhain.de/mailman/listinfo/libavg-devel">https://mail.datenhain.de/mailman/listinfo/libavg-devel</a>.
 </p>
@@ -27,10 +27,16 @@ Archives of previous postings to the list are here: <br>
 <a href="http://mail.datenhain.de/pipermail/libavg-devel/">http://mail.datenhain.de/pipermail/libavg-devel/</a>
 </p>
 <p>
-Old archives (until august 2006) are here: <br>
+An old archive (until august 2006) is here: <br>
 <a href="http://sourceforge.net/mailarchive/forum.php?forum=libavg-users">http://sourceforge.net/mailarchive/ forum.php?forum=libavg-users</a><br>
-<a href="http://sourceforge.net/mailarchive/forum.php?forum=libavg-devel">http://sourceforge.net/mailarchive/ forum.php?forum=libavg-devel</a>
 </p>
+<p>
+There's also a bug tracking system here:<br>
+<a href="https://www.libavg.de/mantis/view_all_bug_page.php">https://www.libavg.de/mantis/view_all_bug_page.php</a>
+<br>
+If you're sure you've found a bug, feel free to enter it into the tracking system. If you
+think you might have found a bug, feel free to ask on the mailing list first.
+
   </div>
   
 </div>
