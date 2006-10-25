@@ -42,17 +42,15 @@
 <h2 class="class">Type AVGNode</h2>
 
 <pre class="base-tree">
-<a href="__builtin__.object-class.html"><code>object</code></a> --+                
-         |                
-  <a href="None.instance-class.html"><code>instance</code></a> --+            
-             |            
-          <a href="avg.Node-class.html"><code>Node</code></a> --+        
-                 |        
-         <a href="avg.Container-class.html"><code>Container</code></a> --+    
-                     |    
-               <a href="avg.DivNode-class.html"><code>DivNode</code></a> --+
-                         |
-                        <b>AVGNode</b>
+<a href="__builtin__.object-class.html"><code>object</code></a> --+            
+         |            
+  <a href="None.instance-class.html"><code>instance</code></a> --+        
+             |        
+          <a href="avg.Node-class.html"><code>Node</code></a> --+    
+                 |    
+           <a href="avg.DivNode-class.html"><code>DivNode</code></a> --+
+                     |
+                    <b>AVGNode</b>
 </pre><br />
 
 <hr/>
@@ -61,7 +59,7 @@
 Root node of any avg tree. Defines the properties of the display and
 handles key press events. The AVGNode's width and height define the
 coordinate system for the display and are the default for the window
-size used (i.e. by default, the coordinate system is pixel-based.
+size used (i.e. by default, the coordinate system is pixel-based.)
 Properties:
     onkeydown: The python code to execute when a key is pressed (ro).
     onkeyup: The python code to execute when a key is released (ro).
@@ -81,26 +79,26 @@ Properties:
 <br />
 Returns true if cropping is active.</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
-  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Container</th></tr>
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from DivNode</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Container-class.html#addChild" class="summary-sig-name"><code>addChild</code></a>(<span class=summary-sig-arg>Node</span>)</span></code>
+  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#addChild" class="summary-sig-name"><code>addChild</code></a>(<span class=summary-sig-arg>Node</span>)</span></code>
 <br />
 Adds a new child to the container.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">Node</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Container-class.html#getChild" class="summary-sig-name"><code>getChild</code></a>(<span class=summary-sig-arg>i</span>)</span></code>
+  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#getChild" class="summary-sig-name"><code>getChild</code></a>(<span class=summary-sig-arg>i</span>)</span></code>
 <br />
 Returns the ith child in z-order.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">numChildren</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Container-class.html#getNumChildren" class="summary-sig-name"><code>getNumChildren</code></a>()</span></code>
+  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#getNumChildren" class="summary-sig-name"><code>getNumChildren</code></a>()</span></code>
 <br />
 getNumChildren() -&gt; numChildren...</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">i</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Container-class.html#indexOf" class="summary-sig-name"><code>indexOf</code></a>(<span class=summary-sig-arg>childNode</span>)</span></code>
+  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#indexOf" class="summary-sig-name"><code>indexOf</code></a>(<span class=summary-sig-arg>childNode</span>)</span></code>
 <br />
 Returns the index of the child given or -1 if childNode isn't a
 child of the container.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Container-class.html#removeChild" class="summary-sig-name"><code>removeChild</code></a>(<span class=summary-sig-arg>i</span>)</span></code>
+  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#removeChild" class="summary-sig-name"><code>removeChild</code></a>(<span class=summary-sig-arg>i</span>)</span></code>
 <br />
 Removes the child at index i.</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
@@ -108,7 +106,16 @@ Removes the child at index i.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">Node</font></td>
   <td><code><span class="summary-sig"><a href="avg.Node-class.html#getParent" class="summary-sig-name"><code>getParent</code></a>()</span></code>
 <br />
-Returns the container (AVGNode, DivNode or Excl) the node is in.</td></tr>
+Returns the container (AVGNode or DivNode) the node is in.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Node-class.html#releaseEventCapture" class="summary-sig-name"><code>releaseEventCapture</code></a>()</span></code>
+<br />
+Restores normal nouse operation after a call to setEventCapture()...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Node-class.html#setEventCapture" class="summary-sig-name"><code>setEventCapture</code></a>()</span></code>
+<br />
+Sets up event capturing so that all mouse events are sent to this node
+regardless of the mouse cursor position.</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from instance</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
@@ -163,9 +170,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <td><b><a href="avg.AVGNode-class.html#onkeyup"><code>onkeyup</code></a></b></td></tr><tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Node</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="avg.Node-class.html#active"><code>active</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#height"><code>height</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#id"><code>id</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#opacity"><code>opacity</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="avg.Node-class.html#sensitive"><code>sensitive</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#width"><code>width</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#x"><code>x</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#y"><code>y</code></a></b></td></tr></table><br />
@@ -176,7 +185,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
 <tr bgcolor="#70b0f0" class="summary">
   <th colspan="2">Class Variable Summary</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
-<td><b><a href="avg.AVGNode-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="184">184&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+<td><b><a href="avg.AVGNode-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="196">196&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
 </table><br />
 
 
@@ -219,7 +228,7 @@ isCropActive      </dd>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f09<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f24<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -233,7 +242,7 @@ isCropActive      </dd>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f09<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f24<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -258,10 +267,10 @@ isCropActive      </dd>
           <code>int</code>
 
       </dd>
-<span title="184">      <dt><b>Value:</b></dt>
+<span title="196">      <dt><b>Value:</b></dt>
       <dd><table><tr><td>
 <pre class="variable">
-184&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+196&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
         </td></tr></table></dd>
 </span>    </dl>
   </dd>
@@ -288,7 +297,7 @@ isCropActive      </dd>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Nov 27 16:16:14 2005</font></td>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Wed Oct 25 23:34:35 2006</font></td>
     <td align="right"><a href="http://epydoc.sourceforge.net"
                       ><font size="-2">http://epydoc.sf.net</font></a></td>
   </tr>

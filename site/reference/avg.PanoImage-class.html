@@ -77,12 +77,31 @@ Properties:
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class="summary-sig-vararg">...</span>)</span></code>
 </td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">pos</font></td>
+  <td><code><span class="summary-sig"><a href="avg.PanoImage-class.html#getScreenPosFromAngle" class="summary-sig-name"><code>getScreenPosFromAngle</code></a>(<span class=summary-sig-arg>angle</span>)</span></code>
+<br />
+Converts panorama angle to pixels in coordinates
+relative to the node, taking into account the current rotation angle.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">pos</font></td>
+  <td><code><span class="summary-sig"><a href="avg.PanoImage-class.html#getScreenPosFromPanoPos" class="summary-sig-name"><code>getScreenPosFromPanoPos</code></a>(<span class=summary-sig-arg>panoPos</span>)</span></code>
+<br />
+Converts a position in panorama image pixels to pixels in coordinates
+relative to the node, taking into account the current rotation angle.</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Node</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">Node</font></td>
   <td><code><span class="summary-sig"><a href="avg.Node-class.html#getParent" class="summary-sig-name"><code>getParent</code></a>()</span></code>
 <br />
-Returns the container (AVGNode, DivNode or Excl) the node is in.</td></tr>
+Returns the container (AVGNode or DivNode) the node is in.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Node-class.html#releaseEventCapture" class="summary-sig-name"><code>releaseEventCapture</code></a>()</span></code>
+<br />
+Restores normal nouse operation after a call to setEventCapture()...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Node-class.html#setEventCapture" class="summary-sig-name"><code>setEventCapture</code></a>()</span></code>
+<br />
+Sets up event capturing so that all mouse events are sent to this node
+regardless of the mouse cursor position.</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from instance</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
@@ -143,9 +162,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <td><b><a href="avg.PanoImage-class.html#sensorwidth"><code>sensorwidth</code></a></b></td></tr><tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Node</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="avg.Node-class.html#active"><code>active</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#height"><code>height</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#id"><code>id</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#opacity"><code>opacity</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="avg.Node-class.html#sensitive"><code>sensitive</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#width"><code>width</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#x"><code>x</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#y"><code>y</code></a></b></td></tr></table><br />
@@ -156,8 +177,48 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
 <tr bgcolor="#70b0f0" class="summary">
   <th colspan="2">Class Variable Summary</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
-<td><b><a href="avg.PanoImage-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="276">276&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+<td><b><a href="avg.PanoImage-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="292">292&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
 </table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="getScreenPosFromAngle"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getScreenPosFromAngle</span>(<span class=sig-arg>angle</span>)</span>
+  </h3>
+<pre class="literalblock">
+Converts panorama angle to pixels in coordinates
+relative to the node, taking into account the current rotation angle.
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+pos      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getScreenPosFromPanoPos"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getScreenPosFromPanoPos</span>(<span class=sig-arg>panoPos</span>)</span>
+  </h3>
+<pre class="literalblock">
+Converts a position in panorama image pixels to pixels in coordinates
+relative to the node, taking into account the current rotation angle.
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+pos      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+<br />
 
 
 <!-- =========== START OF PROPERTY DETAILS =========== -->
@@ -174,7 +235,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
+
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -188,7 +253,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
+
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -202,7 +271,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -216,7 +285,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -230,11 +299,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f09<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -248,7 +317,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -262,7 +331,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
+
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -276,7 +349,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f07<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
+
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f89<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -301,10 +378,10 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
           <code>int</code>
 
       </dd>
-<span title="276">      <dt><b>Value:</b></dt>
+<span title="292">      <dt><b>Value:</b></dt>
       <dd><table><tr><td>
 <pre class="variable">
-276&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+292&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
         </td></tr></table></dd>
 </span>    </dl>
   </dd>
@@ -331,7 +408,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Nov 27 16:16:14 2005</font></td>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Wed Oct 25 23:34:34 2006</font></td>
     <td align="right"><a href="http://epydoc.sourceforge.net"
                       ><font size="-2">http://epydoc.sf.net</font></a></td>
   </tr>

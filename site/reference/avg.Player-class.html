@@ -92,6 +92,9 @@ Gets an interface to the last mouse event.</td></tr>
   <td><code><span class="summary-sig"><a href="avg.Player-class.html#getRootNode" class="summary-sig-name"><code>getRootNode</code></a>()</span></code>
 <br />
 Returns the outermost element in the avg tree.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="getTestHelper"></a><span class="summary-sig"><span class="summary-sig-name">getTestHelper</span>(<span class="summary-sig-vararg">...</span>)</span></code>
+</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">refreshrate</font></td>
   <td><code><span class="summary-sig"><a href="avg.Player-class.html#getVideoRefreshRate" class="summary-sig-name"><code>getVideoRefreshRate</code></a>()</span></code>
 <br />
@@ -110,9 +113,9 @@ Loads the avg file specified in fileName.</td></tr>
 <br />
 Opens a playback window or screen and starts playback.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">ok</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Player-class.html#screenshot" class="summary-sig-name"><code>screenshot</code></a>(<span class=summary-sig-arg>filename</span>)</span></code>
+  <td><code><span class="summary-sig"><a href="avg.Player-class.html#screenshot" class="summary-sig-name"><code>screenshot</code></a>()</span></code>
 <br />
-Saves the contents of the current screen in a png file.</td></tr>
+Returns the contents of the current screen as a bitmap.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
   <td><code><span class="summary-sig"><a href="avg.Player-class.html#setDisplayEngine" class="summary-sig-name"><code>setDisplayEngine</code></a>(<span class=summary-sig-arg>engine</span>)</span></code>
 <br />
@@ -122,6 +125,12 @@ Determines which display backend to use.</td></tr>
 <br />
 Sets the desired framerate for playback and turns off syncronization
 to the vertical blanking interval.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Player-class.html#setGamma" class="summary-sig-name"><code>setGamma</code></a>(<span class=summary-sig-arg>red</span>,
+          <span class=summary-sig-arg>green</span>,
+          <span class=summary-sig-arg>blue</span>)</span></code>
+<br />
+Sets display gamma.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">id</font></td>
   <td><code><span class="summary-sig"><a href="avg.Player-class.html#setInterval" class="summary-sig-name"><code>setInterval</code></a>(<span class=summary-sig-arg>time</span>,
           <span class=summary-sig-arg>pyfunc</span>)</span></code>
@@ -129,12 +138,22 @@ to the vertical blanking interval.</td></tr>
 Sets a python callable object that should be executed every time
 milliseconds.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Player-class.html#setOGLOptions" class="summary-sig-name"><code>setOGLOptions</code></a>(<span class=summary-sig-arg>UsePOW2Textures</span>,
+          <span class=summary-sig-arg>YCbCrMode</span>,
+          <span class=summary-sig-arg>UseRGBOrder</span>,
+          <span class=summary-sig-arg>UsePixelBuffers</span>,
+          <span class=summary-sig-arg>MultiSampleSamples</span>)</span></code>
+<br />
+-&gt; None
+
+Determines which OpenGL extensions to check for and use if possible.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
   <td><code><span class="summary-sig"><a href="avg.Player-class.html#setResolution" class="summary-sig-name"><code>setResolution</code></a>(<span class=summary-sig-arg>fullscreen</span>,
           <span class=summary-sig-arg>width</span>,
           <span class=summary-sig-arg>height</span>,
           <span class=summary-sig-arg>bpp</span>)</span></code>
 <br />
-setResolution(fullscreen, width, height, bpp) -&gt; None...</td></tr>
+Sets display engine parameters.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">id</font></td>
   <td><code><span class="summary-sig"><a href="avg.Player-class.html#setTimeout" class="summary-sig-name"><code>setTimeout</code></a>(<span class=summary-sig-arg>time</span>,
           <span class=summary-sig-arg>pyfunc</span>)</span></code>
@@ -204,7 +223,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
 <tr bgcolor="#70b0f0" class="summary">
   <th colspan="2">Class Variable Summary</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
-<td><b><a href="avg.Player-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="212">212&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+<td><b><a href="avg.Player-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="308">308&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
 </table><br />
 
 
@@ -236,7 +255,7 @@ ok      </dd>
   </h3>
 <pre class="literalblock">
 Creates a new Node from an xml string. This node can be used as
-parameter to Container::addChild(). BROKEN!
+parameter to DivNode::addChild(). BROKEN!
 </pre>
   <dl><dt></dt><dd>
     <dl><dt><b>Returns:</b></dt>
@@ -376,9 +395,7 @@ None      </dd>
 <pre class="literalblock">
 Opens a playback window or screen and starts playback. framerate is
 the number of frames per second that should be displayed. play returns
-when playback has ended. syncToVBlank specifies whether to wait for
-the screen's vertical blanking interval before showing the next
-frame.
+when playback has ended.
 </pre>
   <dl><dt></dt><dd>
     <dl><dt><b>Returns:</b></dt>
@@ -390,11 +407,10 @@ None      </dd>
 
 <a name="screenshot"></a>
 <table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
-  <h3><span class="sig"><span class="sig-name">screenshot</span>(<span class=sig-arg>filename</span>)</span>
+  <h3><span class="sig"><span class="sig-name">screenshot</span>()</span>
   </h3>
 <pre class="literalblock">
-Saves the contents of the current screen in a png file. Returns
-1 on success, 0 if the screen couldn't be saved.
+Returns the contents of the current screen as a bitmap.
 </pre>
   <dl><dt></dt><dd>
     <dl><dt><b>Returns:</b></dt>
@@ -437,6 +453,26 @@ None      </dd>
   </dd></dl>
 </td></tr></table>
 
+<a name="setGamma"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setGamma</span>(<span class=sig-arg>red</span>,
+          <span class=sig-arg>green</span>,
+          <span class=sig-arg>blue</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets display gamma. This is a control for overall brightness and
+contrast that leaves black and white unchanged but adjusts greyscale
+values. 1.0 is identity, higher values give a brighter image, lower
+values a darker one.
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+None      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
 <a name="setInterval"></a>
 <table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
   <h3><span class="sig"><span class="sig-name">setInterval</span>(<span class=sig-arg>time</span>,
@@ -455,6 +491,37 @@ id      </dd>
   </dd></dl>
 </td></tr></table>
 
+<a name="setOGLOptions"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setOGLOptions</span>(<span class=sig-arg>UsePOW2Textures</span>,
+          <span class=sig-arg>YCbCrMode</span>,
+          <span class=sig-arg>UseRGBOrder</span>,
+          <span class=sig-arg>UsePixelBuffers</span>,
+          <span class=sig-arg>MultiSampleSamples</span>)</span>
+  </h3>
+<pre class="literalblock">
+-&gt; None
+
+Determines which OpenGL extensions to check for and use if possible.
+Mainly used for debugging purposes while developing libavg, but can
+also be used to work around buggy drivers.
+UsePOW2Textures=true restricts textures to power-of-two dimensions.
+YCbCrMode can be shader, mesa, apple or none and selects the preferred
+method of copying video textures to the screen.
+UseRGBOrder=true swaps the order of red and blue components in textures.
+UsePixelBuffers=false disables the use of OpenGL pixel buffer objects.
+MultiSampleSamples is the number of samples per pixel to compute. This
+costs performance and smoothes the edges of polygons. A value of 1 turns
+multisampling off. Good values are dependent on the graphics driver.
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+None      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
 <a name="setResolution"></a>
 <table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
   <h3><span class="sig"><span class="sig-name">setResolution</span>(<span class=sig-arg>fullscreen</span>,
@@ -463,7 +530,10 @@ id      </dd>
           <span class=sig-arg>bpp</span>)</span>
   </h3>
 <pre class="literalblock">
-setResolution(fullscreen, width, height, bpp) -&gt; None
+Sets display engine parameters. width and height set the window size
+(if fullscreen is false) or screen resolution (if fullscreen is true).
+bpp is the number of bits per pixel to use. Must be called before
+loadFile.
 </pre>
   <dl><dt></dt><dd>
     <dl><dt><b>Returns:</b></dt>
@@ -498,7 +568,8 @@ id      </dd>
 <pre class="literalblock">
 Sets the desired number of vertical blanking intervals before the next
 frame is displayed. The resulting framerate is determined by the
-monitor refresh rate divided by the rate parameter.
+monitor refresh rate divided by the rate parameter. On Mac OS X, only 0
+are supported as rate.
 </pre>
   <dl><dt></dt><dd>
     <dl><dt><b>Returns:</b></dt>
@@ -559,10 +630,10 @@ None      </dd>
           <code>int</code>
 
       </dd>
-<span title="212">      <dt><b>Value:</b></dt>
+<span title="308">      <dt><b>Value:</b></dt>
       <dd><table><tr><td>
 <pre class="variable">
-212&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+308&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
         </td></tr></table></dd>
 </span>    </dl>
   </dd>
@@ -589,7 +660,7 @@ None      </dd>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Nov 27 16:16:14 2005</font></td>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Wed Oct 25 23:34:35 2006</font></td>
     <td align="right"><a href="http://epydoc.sourceforge.net"
                       ><font size="-2">http://epydoc.sf.net</font></a></td>
   </tr>

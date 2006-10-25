@@ -3,7 +3,7 @@
           "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>avg.DivNode</title>
+  <title>avg.Bitmap</title>
   <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
 </head>
 <body bgcolor="white" text="black" link="blue" vlink="#204080"
@@ -30,38 +30,31 @@
     <td width="100%">
       <font size="-1"><b class="breadcrumbs">
         <a href="avg-module.html">Module&nbsp;avg</a> ::
-        Class&nbsp;DivNode
+        Class&nbsp;Bitmap
       </b></font></br>
     </td>
     <td><table cellpadding="0" cellspacing="0">
-      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="avg.DivNode-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="avg.Bitmap-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
     </table></td>
 </tr></table>
 
 <!-- =========== START OF CLASS DESCRIPTION =========== -->
-<h2 class="class">Type DivNode</h2>
+<h2 class="class">Type Bitmap</h2>
 
 <pre class="base-tree">
-<a href="__builtin__.object-class.html"><code>object</code></a> --+        
-         |        
-  <a href="None.instance-class.html"><code>instance</code></a> --+    
-             |    
-          <a href="avg.Node-class.html"><code>Node</code></a> --+
-                 |
-                <b>DivNode</b>
+<a href="__builtin__.object-class.html"><code>object</code></a> --+    
+         |    
+  <a href="None.instance-class.html"><code>instance</code></a> --+
+             |
+            <b>Bitmap</b>
 </pre><br />
-
-<dl><dt><b>Known Subclasses:</b></dt>
-<dd>
-    <a href="avg.AVGNode-class.html"><code>AVGNode</code></a></dd></dl>
 
 <hr/>
 
 <pre class="literalblock">
-A div node is a node that groups other nodes logically and visually.
-Its upper left corner is used as point of origin for the coordinates
-of its child nodes. Its extents are used to clip the children. Its
-opacity is used as base opacity for the child nodes' opacities.
+Class representing a rectangular set of pixels. Bitmaps can be obtained
+from any RasterNode. For nodes of type Image, the current bitmap can be
+set as well.
 </pre>
 <hr/>
 
@@ -71,45 +64,36 @@ opacity is used as base opacity for the child nodes' opacities.
 <tr bgcolor="#70b0f0" class="summary">
   <th colspan="2">Method Summary</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><code><span class="summary-sig"><code>__init__</code>(<span class="summary-sig-vararg">...</span>)</span></code>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class="summary-sig-vararg">...</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">PixelFormat</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Bitmap-class.html#getFormat" class="summary-sig-name"><code>getFormat</code></a>()</span></code>
 <br />
-Raises an exception...</td></tr>
+Possible pixel formats are B5G6R5, B8G8R8, B8G8R8A8, B8G8R8X8,...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">string</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Bitmap-class.html#getName" class="summary-sig-name"><code>getName</code></a>()</span></code>
+<br />
+getName() -&gt; string...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">string</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Bitmap-class.html#getPixels" class="summary-sig-name"><code>getPixels</code></a>()</span></code>
+<br />
+Returns the raw pixel data in the bitmap.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">Point</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Bitmap-class.html#getSize" class="summary-sig-name"><code>getSize</code></a>()</span></code>
+<br />
+Returns the size in pixels.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
-  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#addChild" class="summary-sig-name"><code>addChild</code></a>(<span class=summary-sig-arg>Node</span>)</span></code>
+  <td><code><span class="summary-sig"><a href="avg.Bitmap-class.html#save" class="summary-sig-name"><code>save</code></a>(<span class=summary-sig-arg>filename</span>)</span></code>
 <br />
-Adds a new child to the container.</td></tr>
-<tr><td align="right" valign="top" width="15%"><font size="-1">Node</font></td>
-  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#getChild" class="summary-sig-name"><code>getChild</code></a>(<span class=summary-sig-arg>i</span>)</span></code>
-<br />
-Returns the ith child in z-order.</td></tr>
-<tr><td align="right" valign="top" width="15%"><font size="-1">numChildren</font></td>
-  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#getNumChildren" class="summary-sig-name"><code>getNumChildren</code></a>()</span></code>
-<br />
-getNumChildren() -&gt; numChildren...</td></tr>
-<tr><td align="right" valign="top" width="15%"><font size="-1">i</font></td>
-  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#indexOf" class="summary-sig-name"><code>indexOf</code></a>(<span class=summary-sig-arg>childNode</span>)</span></code>
-<br />
-Returns the index of the child given or -1 if childNode isn't a
-child of the container.</td></tr>
+Writes the contents to a file.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
-  <td><code><span class="summary-sig"><a href="avg.DivNode-class.html#removeChild" class="summary-sig-name"><code>removeChild</code></a>(<span class=summary-sig-arg>i</span>)</span></code>
+  <td><code><span class="summary-sig"><a href="avg.Bitmap-class.html#setPixels" class="summary-sig-name"><code>setPixels</code></a>(<span class=summary-sig-arg>string</span>)</span></code>
 <br />
-Removes the child at index i.</td></tr>
-<tr bgcolor="#e8f0f8" class="group">
-  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Node</th></tr>
-<tr><td align="right" valign="top" width="15%"><font size="-1">Node</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Node-class.html#getParent" class="summary-sig-name"><code>getParent</code></a>()</span></code>
+Changes the raw pixel data in the bitmap.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Bitmap-class.html#subtract" class="summary-sig-name"><code>subtract</code></a>(<span class="summary-sig-vararg">...</span>)</span></code>
 <br />
-Returns the container (AVGNode or DivNode) the node is in.</td></tr>
-<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Node-class.html#releaseEventCapture" class="summary-sig-name"><code>releaseEventCapture</code></a>()</span></code>
-<br />
-Restores normal nouse operation after a call to setEventCapture()...</td></tr>
-<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
-  <td><code><span class="summary-sig"><a href="avg.Node-class.html#setEventCapture" class="summary-sig-name"><code>setEventCapture</code></a>()</span></code>
-<br />
-Sets up event capturing so that all mouse events are sent to this node
-regardless of the mouse cursor position.</td></tr>
+getName() -&gt; None...</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from instance</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
@@ -155,35 +139,81 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
 </table><br />
 
 
-<!-- =========== START OF PROPERTY SUMMARY =========== -->
-<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
-<tr bgcolor="#70b0f0" class="summary">
-  <th colspan="2">Property Summary</th></tr>
-<tr bgcolor="#e8f0f8" class="group">
-  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Node</th></tr>
-<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#active"><code>active</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#height"><code>height</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#id"><code>id</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#opacity"><code>opacity</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#sensitive"><code>sensitive</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#width"><code>width</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#x"><code>x</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Node-class.html#y"><code>y</code></a></b></td></tr></table><br />
-
-
 <!-- =========== START OF METHOD DETAILS =========== -->
 <table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
 <tr bgcolor="#70b0f0" class="details">
   <th colspan="2">Method Details</th></tr>
 </table>
 
-<a name="addChild"></a>
+<a name="getFormat"></a>
 <table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
-  <h3><span class="sig"><span class="sig-name">addChild</span>(<span class=sig-arg>Node</span>)</span>
+  <h3><span class="sig"><span class="sig-name">getFormat</span>()</span>
   </h3>
 <pre class="literalblock">
-Adds a new child to the container.
+Possible pixel formats are B5G6R5, B8G8R8, B8G8R8A8, B8G8R8X8,
+A8B8G8R8, X8B8G8R8, R5G6B5, R8G8B8, R8G8B8A8, R8G8B8X8, A8R8G8B8,
+X8R8G8B8, I8 and YCbCr422
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+PixelFormat      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getName"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getName</span>()</span>
+  </h3>
+<pre class="literalblock">
+getName() -&gt; string
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+string      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getPixels"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getPixels</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns the raw pixel data in the bitmap.
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+string      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getSize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getSize</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns the size in pixels.
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Returns:</b></dt>
+      <dd>
+Point      </dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="save"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">save</span>(<span class=sig-arg>filename</span>)</span>
+  </h3>
+<pre class="literalblock">
+Writes the contents to a file. File format is determined using the
+extension.
 </pre>
   <dl><dt></dt><dd>
     <dl><dt><b>Returns:</b></dt>
@@ -193,64 +223,30 @@ None      </dd>
   </dd></dl>
 </td></tr></table>
 
-<a name="getChild"></a>
+<a name="setPixels"></a>
 <table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
-  <h3><span class="sig"><span class="sig-name">getChild</span>(<span class=sig-arg>i</span>)</span>
+  <h3><span class="sig"><span class="sig-name">setPixels</span>(<span class=sig-arg>string</span>)</span>
   </h3>
 <pre class="literalblock">
-Returns the ith child in z-order.
-</pre>
-  <dl><dt></dt><dd>
-    <dl><dt><b>Returns:</b></dt>
-      <dd>
-Node      </dd>
-    </dl>
-  </dd></dl>
-</td></tr></table>
-
-<a name="getNumChildren"></a>
-<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
-  <h3><span class="sig"><span class="sig-name">getNumChildren</span>()</span>
-  </h3>
-<pre class="literalblock">
-getNumChildren() -&gt; numChildren
-</pre>
-  <dl><dt></dt><dd>
-    <dl><dt><b>Returns:</b></dt>
-      <dd>
-numChildren      </dd>
-    </dl>
-  </dd></dl>
-</td></tr></table>
-
-<a name="indexOf"></a>
-<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
-  <h3><span class="sig"><span class="sig-name">indexOf</span>(<span class=sig-arg>childNode</span>)</span>
-  </h3>
-<pre class="literalblock">
-Returns the index of the child given or -1 if childNode isn't a
-child of the container.
-</pre>
-  <dl><dt></dt><dd>
-    <dl><dt><b>Returns:</b></dt>
-      <dd>
-i      </dd>
-    </dl>
-  </dd></dl>
-</td></tr></table>
-
-<a name="removeChild"></a>
-<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
-  <h3><span class="sig"><span class="sig-name">removeChild</span>(<span class=sig-arg>i</span>)</span>
-  </h3>
-<pre class="literalblock">
-Removes the child at index i.
+Changes the raw pixel data in the bitmap. Doesn't change dimensions 
+or pixel format.
 </pre>
   <dl><dt></dt><dd>
     <dl><dt><b>Returns:</b></dt>
       <dd>
 None      </dd>
     </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="subtract"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">subtract</span>(<span class="sig-vararg">...</span>)</span>
+  </h3>
+<pre class="literalblock">
+getName() -&gt; None
+</pre>
+  <dl><dt></dt><dd>
   </dd></dl>
 </td></tr></table>
 <br />

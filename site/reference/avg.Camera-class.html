@@ -63,7 +63,7 @@ Properties:
     device (ro)
     framerate (ro)
     mode (ro)
-    brightness, exposure, sharpness, saturation, gamma, shutter, gain
+    brightness, exposure, sharpness, saturation, gamma, shutter, gain, whitebalance
 </pre>
 <hr/>
 
@@ -83,7 +83,7 @@ Properties:
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
   <td><code><span class="summary-sig"><a href="avg.VideoBase-class.html#pause" class="summary-sig-name"><code>pause</code></a>()</span></code>
 <br />
-Stpos video playback but doesn't close the file.</td></tr>
+Stops video playback but doesn't close the file.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
   <td><code><span class="summary-sig"><a href="avg.VideoBase-class.html#play" class="summary-sig-name"><code>play</code></a>()</span></code>
 <br />
@@ -94,6 +94,10 @@ Starts video playback.</td></tr>
 Stops video playback.</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from RasterNode</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">Bitmap</font></td>
+  <td><code><span class="summary-sig"><a href="avg.RasterNode-class.html#getBitmap" class="summary-sig-name"><code>getBitmap</code></a>()</span></code>
+<br />
+Returns a copy of the bitmap that the node contains.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">x</font></td>
   <td><code><span class="summary-sig"><a href="avg.RasterNode-class.html#getNumVerticesX" class="summary-sig-name"><code>getNumVerticesX</code></a>()</span></code>
 <br />
@@ -123,7 +127,16 @@ Changes the current coordinate of a vertex.</td></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">Node</font></td>
   <td><code><span class="summary-sig"><a href="avg.Node-class.html#getParent" class="summary-sig-name"><code>getParent</code></a>()</span></code>
 <br />
-Returns the container (AVGNode, DivNode or Excl) the node is in.</td></tr>
+Returns the container (AVGNode or DivNode) the node is in.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Node-class.html#releaseEventCapture" class="summary-sig-name"><code>releaseEventCapture</code></a>()</span></code>
+<br />
+Restores normal nouse operation after a call to setEventCapture()...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">None</font></td>
+  <td><code><span class="summary-sig"><a href="avg.Node-class.html#setEventCapture" class="summary-sig-name"><code>setEventCapture</code></a>()</span></code>
+<br />
+Sets up event capturing so that all mouse events are sent to this node
+regardless of the mouse cursor position.</td></tr>
 <tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from instance</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
@@ -183,7 +196,8 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <td><b><a href="avg.Camera-class.html#mode"><code>mode</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Camera-class.html#saturation"><code>saturation</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Camera-class.html#sharpness"><code>sharpness</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
-  <td><b><a href="avg.Camera-class.html#shutter"><code>shutter</code></a></b></td></tr><tr bgcolor="#e8f0f8" class="group">
+  <td><b><a href="avg.Camera-class.html#shutter"><code>shutter</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="avg.Camera-class.html#whitebalance"><code>whitebalance</code></a></b></td></tr><tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from RasterNode</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.RasterNode-class.html#angle"><code>angle</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
@@ -194,9 +208,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <td><b><a href="avg.RasterNode-class.html#pivoty"><code>pivoty</code></a></b></td></tr><tr bgcolor="#e8f0f8" class="group">
   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from Node</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="avg.Node-class.html#active"><code>active</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#height"><code>height</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#id"><code>id</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#opacity"><code>opacity</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="avg.Node-class.html#sensitive"><code>sensitive</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#width"><code>width</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#x"><code>x</code></a></b></td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
   <td><b><a href="avg.Node-class.html#y"><code>y</code></a></b></td></tr></table><br />
@@ -207,7 +223,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
 <tr bgcolor="#70b0f0" class="summary">
   <th colspan="2">Class Variable Summary</th></tr>
 <tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
-<td><b><a href="avg.Camera-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="2244">2244&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
+<td><b><a href="avg.Camera-class.html#__instance_size__"><code>__instance_size__</code></a></b> = <span title="2272">2272&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
 </table><br />
 
 
@@ -225,11 +241,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -243,7 +259,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -257,11 +273,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -275,7 +291,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -289,11 +305,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -307,11 +323,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -325,7 +341,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -339,11 +355,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -357,11 +373,11 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -375,11 +391,29 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
   <dd>
     <dl>
       <dt><b>Get Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
       <dt><b>Set Method:</b></dt>
-      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f1e<span class="variable-ellipsis">...</span></code>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
+
+      </dd>
+    </dl>
+  </dd>
+</dl></td></tr></table><table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+
+<a name="whitebalance"></a>
+<h3>whitebalance</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Get Method:</b></dt>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
+
+      </dd>
+      <dt><b>Set Method:</b></dt>
+      <dd><code>&lt;Boost.Python.function&nbsp;object&nbsp;at&nbsp;0x80f45<span class="variable-ellipsis">...</span></code>
 
       </dd>
     </dl>
@@ -404,10 +438,10 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
           <code>int</code>
 
       </dd>
-<span title="2244">      <dt><b>Value:</b></dt>
+<span title="2272">      <dt><b>Value:</b></dt>
       <dd><table><tr><td>
 <pre class="variable">
-2244&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+2272&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
         </td></tr></table></dd>
 </span>    </dl>
   </dd>
@@ -434,7 +468,7 @@ x.__str__() &lt;==&gt; str(x)...</td></tr>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Nov 27 16:16:14 2005</font></td>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Wed Oct 25 23:34:35 2006</font></td>
     <td align="right"><a href="http://epydoc.sourceforge.net"
                       ><font size="-2">http://epydoc.sf.net</font></a></td>
   </tr>
