@@ -19,6 +19,8 @@
     <p>lib<i>avg</i> is a high-level multimedia platform with a focus on interactive installations. It is meant to pick up where Macromedia Director leaves off and gives you high-quality hardware-accelerated visuals as well as easy and flexible authoring, testing and deployment. lib<i>avg</i> integrates well with other open-source solutions for sound, networking and hardware device support, resulting in a complete and well-integrated package. It uses an xml-based layout language for screen design and python as scripting language.</p>
 	<p>lib<i>avg</i> is currently available for Linux and Mac OS X. It is open source and licensed under the LGPL (For details, click on License in the menu).</p>
     <h1>News</h1> 
+    <h2 class="news">Version 0.6.0 Available <span class="date">October 25, 2006</span></h2>
+    <p>libavg 0.6.0 adds support for dynamically adding nodes to and removing nodes from an active avg tree, thus making the library a lot more flexible. Lots of other minor things have been improved - see the NEWS file in the distribution.
     <h2 class="news">Version 0.5.9 Available <span class="date">August 11, 2006</span></h2>
     <p>The new version includes Intel Mac support, support for videos with alpha channels, much improved automatic tests and thus (hopefully) better stability, Mac vertical blanking support, support for multisampling, gamma correction and lots of minor bugfixes.
     <h2 class="news">Complete Website Overhaul <span class="date">May 10, 2006</span></h2>

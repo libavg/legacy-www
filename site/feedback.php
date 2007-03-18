@@ -27,15 +27,11 @@ Archives of previous postings to the list are here: <br>
 <a href="http://mail.datenhain.de/pipermail/libavg-devel/">http://mail.datenhain.de/pipermail/libavg-devel/</a>
 </p>
 <p>
-An old archive (until august 2006) is here: <br>
-<a href="http://sourceforge.net/mailarchive/forum.php?forum=libavg-users">http://sourceforge.net/mailarchive/ forum.php?forum=libavg-users</a><br>
-</p>
-<p>
 There's also a bug tracking system here:<br>
 <a href="https://www.libavg.de/mantis/view_all_bug_page.php">https://www.libavg.de/mantis/view_all_bug_page.php</a>
 <br>
 If you're sure you've found a bug, feel free to enter it into the tracking system. If you
-think you might have found a bug, feel free to ask on the mailing list first.
+think you might have found a bug, please ask on the mailing list first.
 
   </div>
   

@@ -1,4 +1,4 @@
-  <div style="position:absolute; left:265px; top:170px;">
+  <div style="position:absolute; left:225px; top:170px;">
   
   <div id="showcase">
     <div id="showcase-top"><img src="images/leer.gif" width="50" height="60" alt="" align="bottom">Showcase</div>

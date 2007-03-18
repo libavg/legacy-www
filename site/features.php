@@ -40,7 +40,6 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <h2 class="news">Video Support</h2> 
 <p>libavg video support means:</p>
 <ul>
-<li>Several videos at once</li>
 <li>Playback pause and restart</li>
 <li>Complete display engine integration, including cropping, scaling, rotation and transparency</li>
 <li>Very high performance: An Athlon 64 2.0 GHz machine can display 10 352x240 videos at once at 60 frames per second.</li>
