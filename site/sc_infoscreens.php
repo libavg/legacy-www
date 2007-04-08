@@ -23,7 +23,7 @@
 Screen design by Claudia Krummenacher, programming by Ulrich von Zadow, Starsoda and c-wars ads by Marten Suhr, translations of 'Welcome aboard the c-base' by too many people to be listed here.</p>
 <p>
 The Infoscreen software can be downloaded via subversion at<br>
-<tt>svn co https://www.libavg.de/svn/trunk/eingangsmonitore</tt><br>
+<tt>svn co https://www.libavg.de/svn/trunk/avg_media/eingangsmonitore</tt><br>
   
 
 The checkout contains all the media and media used. It is about 45 mb large.

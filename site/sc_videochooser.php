@@ -27,7 +27,7 @@ The Videochooser is a small demo that showcases the video playback capabilities 
 <p>
 
 The Videochooser can be checked out using subversion:<br>
- <tt>svn co https://www.libavg.de/svn/trunk/samples/videochooser</tt></p>
+ <tt>svn co https://www.libavg.de/svn/trunk/avg_media/samples/videochooser</tt></p>
 
 <script language="JavaScript1.2">
 
