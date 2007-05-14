@@ -40,7 +40,7 @@ In addition to state-of-the-art computers, legacy systems should be supported so
 <p class="bold">They don&acute;t.</p>
 <p> 
 
-Director still has a slow rendering engine that does all computation in software. Font quality is medicore, so designers regularly pre-render text in image processing programs and import the images in Director. (Needless to say, that results in lots of extra work if the text needs to be changed during production). There is no linux player.</p>
+Director still has a slow rendering engine that does all computation in software. Font quality is mediocre, so designers regularly pre-render text in image processing programs and import the images in Director. (Needless to say, that results in lots of extra work if the text needs to be changed during production). There is no linux player.</p>
 <p> 
 
 Flash focuses on internet delivery. It is optimized for small downloads, thus the good support for vector graphics. It is not made to handle complex bitmapped graphics and videos, causing performance problems. Like in director, all rendering is done in software and there is no up-to-date playback engine for Linux.</p>
