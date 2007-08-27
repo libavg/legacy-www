@@ -2,7 +2,9 @@
 
 <html>
 <head>
-	<title>libavg</title>
+	<meta name="author" content="Ulrich von Zadow">
+    <meta name="keywords" content="python, multimedia, flash, director, adobe, exhibit, download, opengl">
+    <title>libavg</title>
 	<link rel="stylesheet" href="styles.css" type="text/css">
 	<style type="text/css">	
 	
