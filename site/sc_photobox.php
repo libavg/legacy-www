@@ -22,7 +22,7 @@
 
 The Photobox in the Werder Bremen Museum allows visitors to take photographs of themselves and merge them with images of the soccer club's stars. The user can choose between several star photos to be composited into using greenscreen technology. Several photos are taken, and the user selects the best one to be printed immediately on a connected printer. Even the lighting of the original photo is re-enacted by computer-controlled lights in the booth the Photobox is in.</p>
 <p>
-Besides some custom image processing and printer interface code, the Photobox was built using libavg. It uses a 1024x768 firewire camera for the photos and interfaces to a coin rejector and the lights using a serial velleman board (see [Related]).
+Besides some custom image processing and printer interface code, the Photobox was built using libavg. It uses a 1024x768 firewire camera for the photos and interfaces to a coin rejector and the lights using a serial velleman board.
 </p>
 <p>
 The Photobox was built by the <a href="http://www.marplon4.de">marplon4 GbR</a>.</p>
