@@ -18,13 +18,13 @@
   <? include "showcase.php"?> 
   <div id="content" width="100"><h1>Download</h1>
     
-<h2 class="news">Version 0.6.0:</h2>
+<h2 class="news">Version 0.7.0:</h2>
 
 <ul>
- <li>Source code: <a href="libavg-0.6.0.tar.gz">libavg-0.6.0.tar.gz</a></li>
- <li>Gentoo ebuild: <a href="libavg-0.6.0.ebuild">libavg-0.6.0.ebuild</a></li>
- <li>Intel Mac OS X package: <a href="libavg-mac-intel.0.6.0.zip">libavg-mac-intel.0.6.0.zip</a></li>
- <li>PowerPC Mac OS X package: <a href="libavg-mac-ppc.0.6.0.zip">libavg-mac-ppc.0.6.0.zip</a></li>
+ <li>Source code: <a href="libavg-0.7.0.tar.gz">libavg-0.7.0.tar.gz</a></li>
+ <li>Gentoo ebuild: <a href="libavg-0.7.0.ebuild">libavg-0.7.0.ebuild</a></li>
+ <li>Intel Mac OS X package: <a href="libavg-mac-intel.0.7.0.zip">libavg-mac-intel.0.7.0.zip</a></li>
+ <li>PowerPC Mac OS X package: <a href="libavg-mac-ppc.0.7.0.zip">libavg-mac-ppc.0.7.0.zip</a></li>
 </ul>
     
 <h2 class="news">Subversion Access:</h2>
@@ -37,7 +37,16 @@ Browsing the
 online is also possible.
 
 <h2 class="news">Older Versions:</h2>
-<p>Version 0.5.8:
+
+<p>Version 0.6.0:
+<ul>
+ <li>Source code: <a href="libavg-0.6.0.tar.gz">libavg-0.6.0.tar.gz</a></li>
+ <li>Gentoo ebuild: <a href="libavg-0.6.0.ebuild">libavg-0.6.0.ebuild</a></li>
+ <li>Intel Mac OS X package: <a href="libavg-mac-intel.0.6.0.zip">libavg-mac-intel.0.6.0.zip</a></li>
+ <li>PowerPC Mac OS X package: <a href="libavg-mac-ppc.0.6.0.zip">libavg-mac-ppc.0.6.0.zip</a></li>
+</ul>
+    
+<p>Version 0.5.9:
 <ul>
  <li>Source code: <a href="libavg-0.5.9.tar.gz">libavg-0.5.9.tar.gz</a></li>
  <li>Gentoo ebuild: <a href="libavg-0.5.9.ebuild">libavg-0.5.9.ebuild</a></li>

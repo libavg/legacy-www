@@ -34,7 +34,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>Image alpha channels</li>
 <li>Additive and subtractive as well as averaging blend modes</li>
 <li>Subpixel precision for smooth animations</li>
-<li>Hardware-accelerated OpenGL rendering or software DirectFB rendering</li>
+<li>Hardware-accelerated OpenGL rendering</li>
 <li>Warping and mirroring of elements</li>
 </ul>
 
@@ -42,7 +42,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <h2 class="news">Video Support</h2> 
 <p>libavg video support means:</p>
 <ul>
-<li>Playback pause and restart</li>
+<li>Playback pause and restart, playback at user-determined framerates</li>
 <li>Complete display engine integration, including cropping, scaling, rotation and transparency</li>
 <li>Very high performance: An Athlon 64 2.0 GHz machine can display 10 352x240 videos at once at 60 frames per second.</li>
 <li>Seeks at interactive rates: The same computer displays every third frame of a 1536x1024 video running backwards, also at 60 frames per second.</li>
@@ -64,12 +64,15 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 
 
 <h2 class="news">Camera Support</h2> 
-<p>libavg supports a wide variety of firewire cameras with resolutions up to 1024x768. Setting camera parameters such as brightness, exposure, saturation and gamma is also possible.</p>
+<p>libavg supports a wide variety of firewire and Video4Linux cameras with resolutions up to 1024x768. Setting camera parameters such as brightness, exposure, saturation and gamma is also possible.</p>
 
 
 <h2 class="news">Animation</h2>
 <p>libavg has built-in support for smooth time-based animations. Any numeric attribute of a node - x, y, angle, etc. - can be animated with a single line of code to create linear and spline-based movements.
 
+
+<h2 class="news">Tracking</h2>
+<p>libavg was used as the basis for the c-base MultiTouch Console MTC (<a href="http://www.multitouch.de">http://www.multitouch.de</a>) and thus supports camera tracking and multitouch surfaces built using firewire and Video4Linux cameras. 
 
 <h2 class="news">Authoring</h2> 
 <p>All of python is available for scripting. libavg directly provides:</p>

@@ -23,7 +23,8 @@
 <h2 class="news">Mac OS X</h2>
 
 <p>
-<p>Download <tt>libavg-mac.x.y.z.zip</tt> from the download page, unzip it and double-click on <tt>libavg.pkg</tt>.</p>
+<p>Download the installer for your architecture from the download page, unzip 
+it and double-click on <tt>libavg.pkg</tt>.</p>
 <p>After the installation, copy /Library/Python/2.3/site-packages/avg/avgrc to /etc. On Mac OS X 10.3, you need to have the environment variable PYTHONPATH set to /Library/Python/2.3/site-packages/. On 10.4, this happens automatically. To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/site-packages/avg/test</tt> and call <tt>./Test.py</tt>. You should see some test graphics flicker on the screen. The last message in the terminal should read 'OK'.
 
 <h2 class="news">Gentoo</h2>
@@ -40,6 +41,8 @@
 is added to <tt>/etc/apt/sources.list</tt> first.</p>
 
 <h2 class="news">Source install</h2>
+
+<p><i>Note:</i> Additional notes on installing libavg from source for specific operating systems are in the wiki.
 
 <p>
 libavg uses a lot of third-party libraries. What follows is a list of packages you'll need. The package names are the names of the gentoo packages needed. For other distributions, the list should enable you to find what's needed. In many cases, libavg checks during configure that these libraries are installed, so you'll probably get configure failures if they aren't.</p>
