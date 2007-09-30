@@ -24,7 +24,7 @@
 
 <p>
 
-Unit&agrave; Zero is a project by <a href="http://02l.net">02l</a>. It is 
+Unit&agrave; Zero is a project by <a href="http://02l.net">02l > OUTSIDE STANDING LEVEL</a>. It is 
 composed of 5 stompable platforms. Such elements represent the sensitive 
 nodes of the system, triggerable by means of one pressure, exercised generally 
 with feet or hands, from the visitor. The activation of the platform triggers 
