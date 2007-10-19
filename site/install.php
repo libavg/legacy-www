@@ -25,7 +25,7 @@
 <p>
 <p>Download the installer for your architecture from the download page, unzip 
 it and double-click on <tt>libavg.pkg</tt>.</p>
-<p>After the installation, copy /Library/Python/2.3/site-packages/avg/avgrc to /etc. On Mac OS X 10.3, you need to have the environment variable PYTHONPATH set to /Library/Python/2.3/site-packages/. On 10.4, this happens automatically. To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/site-packages/avg/test</tt> and call <tt>./Test.py</tt>. You should see some test graphics flicker on the screen. The last message in the terminal should read 'OK'.
+<p>After the installation, copy /Library/Python/2.3/site-packages/avg/avgrc to /etc. On Mac OS X 10.3, you need to have the environment variable PYTHONPATH set to /Library/Python/2.3/site-packages/. On 10.4, this happens automatically. To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.3/site-packages/libavg/avg/test</tt> and call <tt>./Test.py</tt>. You should see some test graphics flicker on the screen. The last message in the terminal should read 'OK'.
 
 <h2 class="news">Gentoo</h2>
 
