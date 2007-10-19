@@ -23,7 +23,7 @@
 <ul>
  <li>Source code: <a href="libavg-0.7.0.tar.gz">libavg-0.7.0.tar.gz</a></li>
  <li>Gentoo ebuild: <a href="libavg-0.7.0.ebuild">libavg-0.7.0.ebuild</a></li>
- <li>Intel Mac OS X package: <a href="libavg-mac-intel.0.7.0.zip">libavg-mac-intel.0.7.0.zip</a></li>
+ <li>Intel Mac OS X package: <a href="libavg-mac-intel.0.7.0a.zip">libavg-mac-intel.0.7.0a.zip</a></li>
  <li>PowerPC Mac OS X package: <a href="libavg-mac-ppc.0.7.0.zip">libavg-mac-ppc.0.7.0.zip</a></li>
 </ul>
     
