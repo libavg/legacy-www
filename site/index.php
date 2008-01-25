@@ -22,7 +22,7 @@
 	<p>lib<i>avg</i> is currently available for Linux and Mac OS X. It is open source and licensed under the LGPL (For details, click on License in the menu).</p>
     <h1>News</h1> 
     <h2 class="news">libavg at the transmediale 2008 <span class="date">January 25, 2008</span></h2>
-    <p>We're using libavg as a motion tracking library for The Special Player - dancers are enhanced with digital auras in a multidisciplinary project involving musicians, computers, visual artists, cameras, dancers, projectors and more. If you're in Berlin, come to the c-base, Jan 31-Feb 3. More info here: http://www.02l.net/special/transmediale/the_special_player.
+    <p>We're using libavg as a motion tracking library for The Special Player - dancers are enhanced with digital auras in a multidisciplinary project involving musicians, computers, visual artists, cameras, dancers, projectors and more. If you're in Berlin, come to the c-base, Jan 31-Feb 3. More info on the <a href="http://www.02l.net/special/transmediale/the_special_player">project website</a>.
     <h2 class="news">MTC Construction HowTo <span class="date">October 14, 2007</span></h2>
     <p>People are asking us how to build their own multitouch device, so we wrote up some <a href="https://www.libavg.de/wiki/index.php/Building_a_MultiTouch_Console">instructions</a>.
     <h2 class="news">Version 0.7.0 Available <span class="date">August 31, 2007</span></h2>
