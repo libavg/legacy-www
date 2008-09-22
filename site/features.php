@@ -46,7 +46,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>Complete display engine integration, including cropping, scaling, rotation and transparency.</li>
 <li>Videos with an alpha channel are supported.</li>
 <li>Very high performance: A Core 2 Duo system can play back two full HD videos at once with the right setup. That's 2x1920x1080 pixels at 25 frames a second.</li>
-<li>Seeks at interactive rates: Essentially, libavg allows random access to the frames of full HD videos without delays.</li>
+<li>Seeks at interactive rates: Essentially, libavg allows random access to the frames of full HD videos without delays using mjpg files.</li>
 </ul>
 
 
@@ -63,6 +63,8 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>Layout - including font face and size - changes in mid-paragraph</li>
 </ul>
 
+<h2 class="news">Sound Support</h2>
+<p>libavg supports mixing of an unlimited amount of stereo sounds with a high-quality limiter to avoid artifacts on volume spikes. It supports alsa on linux and core audio on Mac OS X for low-latency sound output. 
 
 <h2 class="news">Camera Support</h2> 
 <p>libavg supports a wide variety of firewire and Video4Linux cameras with resolutions up to 1024x768. Setting camera parameters such as brightness, exposure, saturation and gamma is also possible.</p>
@@ -85,7 +87,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>High-level profiling to find performance bottlenecks</li>
 <li>High-precision frame timing and synchronization to vertical blanking for smooth animations</li>
 </ul>
-	
+
   </div>
   
 </div>

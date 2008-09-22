@@ -2,14 +2,14 @@
 
 <html>
 <head>
-	<meta name="author" content="Ulrich von Zadow">
+    <meta name="author" content="Ulrich von Zadow">
     <meta name="keywords" content="python, multimedia, flash, director, adobe, exhibit, processing, opengl, installation">
-	<title>libavg</title>
-	<link rel="stylesheet" href="styles.css" type="text/css">
-	<style type="text/css">	
-	
-	</style>
-	<script language="JavaScript" src="mouseovertext.js" type=
+    <title>libavg</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style type="text/css"> 
+    
+    </style>
+    <script language="JavaScript" src="mouseovertext.js" type=
 "text/javascript"></script>
 </head>
 

@@ -2,14 +2,14 @@
 
 <html>
 <head>
-	<meta name="author" content="Ulrich von Zadow">
+    <meta name="author" content="Ulrich von Zadow">
     <meta name="keywords" content="python, multimedia, flash, director, adobe, exhibit, processing, opengl">
-	<title>libavg</title>
-	<link rel="stylesheet" href="styles.css" type="text/css">
-	<style type="text/css">	
-	
-	</style>
-	<script language="JavaScript" src="mouseovertext.js" type=
+    <title>libavg</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style type="text/css"> 
+    
+    </style>
+    <script language="JavaScript" src="mouseovertext.js" type=
 "text/javascript"></script>
 </head>
 
@@ -18,9 +18,11 @@
   <? include "showcase.php"?> 
   
   <div id="content" width="100"><h1>About</h1>
-    <p>lib<i>avg</i> is a high-level multimedia platform with a focus on interactive installations. It is meant to pick up where Macromedia Director leaves off and gives you high-quality hardware-accelerated visuals as well as easy and flexible authoring, testing and deployment. lib<i>avg</i> integrates well with other open-source solutions for sound, networking and hardware device support, resulting in a complete and well-integrated package. It uses an xml-based layout language for screen design and python as scripting language.</p>
-	<p>lib<i>avg</i> is currently available for Linux and Mac OS X. It is open source and licensed under the LGPL (For details, click on License in the menu).</p>
-    <h1>News</h1> 
+    <p>lib<i>avg</i> is a high-level multimedia platform with a focus on interactive installations. It is meant to pick up where Macromedia Director and Adobe Flash leave off and gives you high-quality hardware-accelerated visuals as well as easy and flexible authoring, testing and deployment. lib<i>avg</i> works well with other open-source solutions for sound, networking and hardware device support, resulting in a complete and well-integrated package. It uses an xml-based layout language for screen design and python as scripting language.</p>
+    <p>lib<i>avg</i> is currently available for Linux and Mac OS X. It is open source and licensed under the LGPL (For details, click on License in the menu).</p>
+    <h1>News</h1>
+    <h2 class="news">Release 0.8.0 <span class="date">October 22, 2008</span></h2>
+    <p>After lots of work, there's a new release on the download page. It includes sound support, a much improved words node, and a multitude of other api and performance improvements. As always, see the NEWS file in the distribution for details.
     <h2 class="news">Awards for libavg-based installation <span class="date">June 20, 2008</span></h2>
     <p>The libavg-based Jurascopes in the Berlin Natural History Museum won a multitude of prestigious awards in the past months. Silver from the german Art Director's Club (ADC), gold from ADC Global, bronze from the british D&amp;AD, two iF communication design awards and the German Multimedia Award - wow. More on the Jurascopes <a href="http://www.artcom.de/index.php?option=com_acprojects&page=6&id=59&Itemid=115&details=0&lang=en">here</a>.
     <h2 class="news">libavg at the transmediale 2008 <span class="date">January 25, 2008</span></h2>
@@ -37,7 +39,7 @@
     <p>Behold what Macro of <a href="http://www.macrone.de">http://www.macrone.de</a> has done: A complete redesign of the website. There's lots of new content as well.
     <h2 class="news">First Mac OS X Version Released
     <span class="date">May 8, 2006</span></h2>
-	<p>A Mac installer is now available on the downloads page. It contains a pkg that installs libavg on your harddisk with a doubleclick. No further configuration should initially be necessary - just add import avg to your python scripts. The Mac version uses the ttf fonts installed in the standard mac font directories and uses Mac OpenGL extensions for video acceleration. At the moment, it has beta status, so don't expect everything to work yet. It's been tested on PowerPCs running Tiger. Intel Macs aren't supported yet.</p>
+    <p>A Mac installer is now available on the downloads page. It contains a pkg that installs libavg on your harddisk with a doubleclick. No further configuration should initially be necessary - just add import avg to your python scripts. The Mac version uses the ttf fonts installed in the standard mac font directories and uses Mac OpenGL extensions for video acceleration. At the moment, it has beta status, so don't expect everything to work yet. It's been tested on PowerPCs running Tiger. Intel Macs aren't supported yet.</p>
   </div>
   
 </div>

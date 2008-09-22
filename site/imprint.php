@@ -2,14 +2,14 @@
 
 <html>
 <head>
-	<meta name="author" content="Ulrich von Zadow">
+    <meta name="author" content="Ulrich von Zadow">
     <meta name="keywords" content="python, multimedia, flash, director, adobe, exhibit, processing, opengl">
-	<title>libavg</title>
-	<link rel="stylesheet" href="styles.css" type="text/css">
-	<style type="text/css">	
-	
-	</style>
-	<script language="JavaScript" src="mouseovertext.js" type=
+    <title>libavg</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style type="text/css"> 
+    
+    </style>
+    <script language="JavaScript" src="mouseovertext.js" type=
 "text/javascript"></script>
 </head>
 
@@ -17,7 +17,7 @@
   <? include "navi.php"?>
   <? include "showcase.php"?> 
   <div id="content" width="100"><h1>Imprint</h1>
-    <p>www.libavg.de is maintained by Ulrich von Zadow, Torstrasse 137, 10119 Berlin, Tel 030-28042362.
+    <p>www.libavg.de is maintained by Ulrich von Zadow, Pannierstr. 1, 12043 Berlin, Tel 030-62728702.
     </p>
     <p>Site design by Macro (<a href="http://www.macrone.de">http://www.macrone.de</a>).
     </p>
