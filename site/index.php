@@ -18,9 +18,11 @@
   <? include "showcase.php"?> 
   
   <div id="content" width="100"><h1>About</h1>
-    <p>lib<i>avg</i> is a high-level multimedia platform with a focus on interactive installations. It is meant to pick up where Macromedia Director and Adobe Flash leave off and gives you high-quality hardware-accelerated visuals as well as easy and flexible authoring, testing and deployment. lib<i>avg</i> works well with other open-source solutions for sound, networking and hardware device support, resulting in a complete and well-integrated package. It uses an xml-based layout language for screen design and python as scripting language.</p>
+    <p>lib<i>avg</i> is a high-level multimedia platform with a focus on interactive installations. It is meant to pick up where Adobe Flash leaves off and gives you high-quality hardware-accelerated visuals as well as easy and flexible authoring, testing and deployment. lib<i>avg</i> works well with other open-source solutions for sound, networking and hardware device support, resulting in a complete and well-integrated package. It uses an xml-based layout language for screen design and python as scripting language.</p>
     <p>lib<i>avg</i> is currently available for Linux and Mac OS X. It is open source and licensed under the LGPL (For details, click on License in the menu).</p>
     <h1>News</h1>
+    <h2 class="news">German Computer Game Prize for libavg-Based Game <span class="date">April 8, 2009</span></h2>
+    <p>Students of the HTW Berlin won the German Computer Game Prize in the category 'Best Student Concept' with a multiplayer/multitouch game developed using libavg. More infos on the official site (<a href="http://www.deutschercomputerspielpreis.de/59.0.html">http://www.deutschercomputerspielpreis.de/59.0.html"</a>) and on the project website (<a href="http://mtc.berlingrooves.de/spiel.html">http://mtc.berlingrooves.de/spiel.html</a>).
     <h2 class="news">libavg Developer Position Open <span class="date">October 7, 2008</span></h2>
     <p>As many of you know, libavg development is sponsored by Archimedes Solutions GmbH. We currently have a job opening for a smart software developer in Berlin. If you're interested in developing exhibits that millions of people will see, have a look at the full job description: <a href="http://archimedes-solutions.de/en/jobs.html">http://archimedes-solutions.de/en/jobs.html</a>.
     <h2 class="news">Release 0.8.0 <span class="date">September 22, 2008</span></h2>
