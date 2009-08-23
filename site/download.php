@@ -22,7 +22,7 @@
 
 <ul>
  <li>Source code: <a href="libavg-0.9.0.tar.gz">libavg-0.9.0.tar.gz</a></li>
- <li>Mac OS X package (Intel only): <a href="libavg-mac-leopard-intel.0.9.0.dmg">libavg-mac-0.9.0.dmg</a></li>
+ <li>Mac OS X package (Intel only): <a href="libavg-mac-0.9.0.dmg">libavg-mac-0.9.0.dmg</a></li>
 </ul>
     
 <h2 class="news">Subversion Access:</h2>
