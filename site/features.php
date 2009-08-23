@@ -49,7 +49,6 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>Seeks at interactive rates: Essentially, libavg allows random access to the frames of full HD videos without delays using mjpg files.</li>
 </ul>
 
-
 <h2 class="news">Text Support</h2> 
 <p>Text rendering is supported with:</p>
 <ul>
@@ -60,8 +59,12 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>Left-/Right-justified as well as centered paragraphs</li>
 <li>Kerning and antialiasing</li>
 <li>Full internationalization using utf8: Arabic, Chinese and Hebrew are all rendered correctly and can be mixed</li>
+<li>Custom letter and line spacing</li>
 <li>Layout - including font face and size - changes in mid-paragraph</li>
 </ul>
+
+<h2 class="news">Vector Support</h2>
+<p>libavg supports vector nodes rendered on the GPU. Available vector node types are Line, PolyLine, Curve, Circle, Polygon and Rectangle. Vector nodes can be textured, with the closed vectors taking two textures: one for the outline, one for the fill.
 
 <h2 class="news">Sound Support</h2>
 <p>libavg supports mixing of an unlimited amount of stereo sounds with a high-quality limiter to avoid artifacts on volume spikes. It supports alsa on linux and core audio on Mac OS X for low-latency sound output. 
@@ -69,10 +72,11 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <h2 class="news">Camera Support</h2> 
 <p>libavg supports a wide variety of firewire and Video4Linux cameras with resolutions up to 1024x768. Setting camera parameters such as brightness, exposure, saturation and gamma is also possible.</p>
 
+<h2 class="news">Plugin Support</h2>
+<p>Plugins written in C++ have access to all libavg internals and can define complete new node types, including xml and python interface. 
 
 <h2 class="news">Animation</h2>
 <p>libavg has built-in support for smooth time-based animations. Any numeric attribute of a node - x, y, angle, etc. - can be animated with a single line of code to create linear and spline-based movements.
-
 
 <h2 class="news">Tracking</h2>
 <p>libavg was used as the basis for the c-base MultiTouch Console MTC (<a href="http://www.multitouch.de">http://www.multitouch.de</a>) and thus supports camera tracking and multitouch surfaces built using firewire and Video4Linux cameras. 

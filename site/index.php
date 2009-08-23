@@ -21,6 +21,8 @@
     <p>lib<i>avg</i> is a high-level media development platform with a focus on interactive installations. It is meant to pick up where Adobe Flash leaves off and gives you high-quality hardware-accelerated visuals as well as easy and flexible authoring, testing and deployment. lib<i>avg</i> works well with other open-source solutions for sound, networking and hardware device support, resulting in a complete and well-integrated package. It uses an xml-based layout language for screen design and python as scripting language.</p>
     <p>lib<i>avg</i> is currently available for Linux and Mac OS X. It is open source and licensed under the LGPL (For details, click on License in the menu).</p>
     <h1>News</h1>
+    <h2 class="news">Release 0.9.0 <span class="date">August 23, 2009</span></h2>
+    <p>We've released a new version of libavg. It features vector support, support for plugins and a powerful new animation framework. For the details, see the <a href="https://www.libavg.de/websvn/filedetails.php?repname=libavg&path=%2Ftrunk%2Flibavg%2FNEWS">NEWS</a> file.
     <h2 class="news">German Computer Game Prize for libavg-Based Game <span class="date">April 8, 2009</span></h2>
     <p>Students of the HTW Berlin won the German Computer Game Prize in the category 'Best Student Concept' with a multiplayer/multitouch game developed using libavg. More infos on the official site (<a href="http://www.deutschercomputerspielpreis.de/59.0.html">http://www.deutschercomputerspielpreis.de/59.0.html"</a>) and on the project website (<a href="http://mtc.berlingrooves.de/spiel.html">http://mtc.berlingrooves.de/spiel.html</a>).
     <h2 class="news">libavg Developer Position Open <span class="date">October 7, 2008</span></h2>

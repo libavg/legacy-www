@@ -23,7 +23,7 @@
 <h2 class="news">Mac OS X</h2>
 
 <p>
-<p>Download the installer from the download page and double-click on <tt>libavg-mac-leopard-intel.0.8.0.dmg</tt>.</p>
+<p>Download the installer from the download page and double-click on it.
 <p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.5/site-packages/libavg/avg/test</tt> and call <tt>./Test.py</tt>. You should see some test graphics flicker on the screen. The last message in the terminal should read 'OK'.
 
 <h2 class="news">Debian Linux</h2>
