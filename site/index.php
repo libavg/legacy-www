@@ -21,6 +21,9 @@
     <p>lib<i>avg</i> is a high-level media development platform with a focus on interactive installations. It is meant to pick up where Adobe Flash leaves off and gives you high-quality hardware-accelerated visuals as well as easy and flexible authoring, testing and deployment. lib<i>avg</i> works well with other open-source solutions for sound, networking and hardware device support, resulting in a complete and well-integrated package. It uses an xml-based layout language for screen design and python as scripting language.</p>
     <p>lib<i>avg</i> is currently available for Linux and Mac OS X. It is open source and licensed under the LGPL (For details, click on License in the menu).</p>
     <h1>News</h1>
+    <h2 class="news">Continuous build infrastructure <span class="date">December 8, 2009</span></h2>
+    <p>A buildbot master, which presently handles two build slaves, has been added as a featured improvement of libavg's test cycle. It can be accessed via the link <a href="http://www.libavg.de:8010">Buldbot</a>, visible on the navigation column. The two slaves are physical machines which are able to run unit tests natively: an Ubuntu 9.04 box and a Windows 2003 R2 setup, both for ia32 arch. Thanks to <a href="http://www.archimedes-solutions.de">Archimedes Solutions GmbH</a> which kindly sponsors the initiative.</p>
+
     <h2 class="news">Release 0.9.0 <span class="date">August 23, 2009</span></h2>
     <p>We've released a new version of libavg. It features vector support, support for plugins and a powerful new animation framework. For the details, see the <a href="https://www.libavg.de/websvn/filedetails.php?repname=libavg&path=%2Ftrunk%2Flibavg%2FNEWS">NEWS</a> file.
     <h2 class="news">German Computer Game Prize for libavg-Based Game <span class="date">April 8, 2009</span></h2>
