@@ -33,8 +33,7 @@ There's also a bug tracking system here:<br>
 <a href="https://www.libavg.de/mantis/view_all_bug_page.php">https://www.libavg.de/mantis/view_all_bug_page.php</a>
 <br>
 If you're sure you've found a bug, feel free to enter it into the tracking system. If you
-think you might have found a bug, please ask on the mailing list first. In both cases, please include as much information as you can about the bug: What system (OS, graphics card, libavg version) are you running on, program output, stack trace in case of a core dump, etc.
-
+think you might have found a bug, please ask on the mailing list first. In both cases, please include as much information as you can about the bug: What system (OS, graphics card, libavg version) are you running on, program output, stack trace in case of a core dump, etc. Bug reports are much more helpful if they follow some basic guidelines - Simon Tatham's page on <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">How to Report Bugs Effectively</a> contains lots of relevant information.
   </div>
   
 </div>
