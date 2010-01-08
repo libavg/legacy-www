@@ -32,6 +32,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>Rotation</li>
 <li>Element-level transparency</li> 
 <li>Image alpha channels</li>
+<li>Separate mask bitmaps</li>
 <li>Additive and subtractive as well as averaging blend modes</li>
 <li>Subpixel precision for smooth animations</li>
 <li>Hardware-accelerated OpenGL rendering</li>
@@ -45,7 +46,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <li>Playback pause and restart, playback at user-determined framerates</li>
 <li>Complete display engine integration, including cropping, scaling, rotation and transparency.</li>
 <li>Videos with an alpha channel are supported.</li>
-<li>Very high performance: A Core 2 Duo system can play back two full HD videos at once with the right setup. That's 2x1920x1080 pixels at 25 frames a second.</li>
+<li>Very high performance: A Core 2 Duo system can play back two full HD videos at once with the right setup. That's 2x1920x1080 pixels at 25 frames a second. Video decoding is accelerated using shaders if available or sse2 assembly if not.</li>
 <li>Seeks at interactive rates: Essentially, libavg allows random access to the frames of full HD videos without delays using mjpg files.</li>
 </ul>
 
@@ -70,7 +71,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <p>libavg supports mixing of an unlimited amount of stereo sounds with a high-quality limiter to avoid artifacts on volume spikes. It supports alsa on linux and core audio on Mac OS X for low-latency sound output. 
 
 <h2 class="news">Camera Support</h2> 
-<p>libavg supports a wide variety of firewire and Video4Linux cameras with resolutions up to 1024x768. Setting camera parameters such as brightness, exposure, saturation and gamma is also possible.</p>
+<p>libavg supports a wide variety of firewire and USB cameras. Setting camera parameters such as brightness, exposure, saturation and gamma is also possible.</p>
 
 <h2 class="news">Plugin Support</h2>
 <p>Plugins written in C++ have access to all libavg internals and can define complete new node types, including xml and python interface. 
@@ -79,7 +80,7 @@ libavg includes a hardware-accelerated display mixer and screen layout engine an
 <p>libavg has built-in support for smooth time-based animations. Any numeric attribute of a node - x, y, angle, etc. - can be animated with a single line of code to create linear and spline-based movements.
 
 <h2 class="news">Tracking</h2>
-<p>libavg was used as the basis for the c-base MultiTouch Console MTC (<a href="http://www.multitouch.de">http://www.multitouch.de</a>) and thus supports camera tracking and multitouch surfaces built using firewire and Video4Linux cameras. 
+<p>libavg was used as the basis for the c-base MultiTouch Console MTC and thus supports camera tracking and multitouch surfaces built using firewire and Video4Linux cameras. 
 
 <h2 class="news">Authoring</h2> 
 <p>All of python is available for scripting. libavg directly provides:</p>

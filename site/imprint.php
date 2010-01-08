@@ -21,7 +21,7 @@
     </p>
     <p>Site design by Macro (<a href="http://www.macrone.de">http://www.macrone.de</a>).
     </p>
-    <p>Hosting and administration by ces at datenhain.de.
+    <p>Hosting and administration sponsored by the kind and competent guys at <a href="http://www.datenhain.de">www.datenhain.de</a>.
     </p>
   </div>
   

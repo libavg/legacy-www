@@ -18,11 +18,12 @@
   <? include "showcase.php"?> 
   <div id="content" width="100"><h1>Download</h1>
     
-<h2 class="news">Version 0.9.0:</h2>
+<h2 class="news">Version 1.0.0:</h2>
 
 <ul>
- <li>Source code: <a href="libavg-0.9.0.tar.gz">libavg-0.9.0.tar.gz</a></li>
- <li>Mac OS X package (Intel only): <a href="libavg-mac-0.9.0.dmg">libavg-mac-0.9.0.dmg</a></li>
+ <li>Source code: <a href="libavg-1.0.0.tar.gz">libavg-1.0.0.tar.gz</a></li>
+ <li>Mac OS X package - Leopard, Intel only: <a href="libavg-mac-10.5-1.0.0.dmg">libavg-mac-10.5-1.0.0.dmg</a></li>
+ <li>Mac OS X package - Snow Leopard: <a href="libavg-mac-10.6-1.0.0.dmg">libavg-mac-10.6-1.0.0.dmg</a></li>
 </ul>
     
 <h2 class="news">Subversion Access:</h2>
@@ -36,6 +37,13 @@ online is also possible.
 
 <h2 class="news">Older Versions:</h2>
 
+<p>Version 0.9.0:
+
+<ul>
+ <li>Source code: <a href="libavg-0.9.0.tar.gz">libavg-0.9.0.tar.gz</a></li>
+ <li>Mac OS X package (Intel only): <a href="libavg-mac-0.9.0.dmg">libavg-mac-0.9.0.dmg</a></li>
+</ul>
+    
 <p>Version 0.8.0:
 <ul>
  <li>Source code: <a href="libavg-0.8.0.tar.gz">libavg-0.8.0.tar.gz</a></li>

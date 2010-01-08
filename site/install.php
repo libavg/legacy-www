@@ -18,25 +18,21 @@
   <? include "showcase.php"?> 
 <div id="content" width="100"><h1>Installing</h1>
     
-<p>libavg currently runs on i386 systems running Linux or Mac OS X. There are packages for Ubuntu and Debian Linux as well as Mac OS X. For other systems, you'll have to download the source and compile by hand.
+<p>There are currently packages for libavg for Ubuntu and Debian Linux as well as Mac OS X. For other systems, you'll have to download the source and compile by hand. Sometimes, the Ubuntu and Debian packages lag behind, so downloading the source tarball makes sure you have the current version.
 
 <h2 class="news">Mac OS X</h2>
 
 <p>
 <p>Download the installer from the download page and double-click on it.
-<p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.5/site-packages/libavg/avg/test</tt> and call <tt>./Test.py</tt>. You should see some test graphics flicker on the screen. The last message in the terminal should read 'OK'.
+<p>To see if everything is running correctly, open a terminal, cd to <tt>/Library/Python/2.5/site-packages/libavg/avg/test</tt> (Under Snow Leopard: <tt>/Library/Python/2.6/site-packages/libavg/avg/test</tt>) and call <tt>./Test.py</tt>. You should see some test graphics flicker on the screen. The last message in the terminal should read 'OK'.
 
 <h2 class="news">Debian Linux</h2>
 
-<p>libavg itself can be installed with apt-get install python-libavg. However, it needs ffmpeg, which will only be found if
-<tt>deb http://www.debian-multimedia.org sid main</tt>
-is added to <tt>/etc/apt/sources.list</tt> first.</p>
+<p>libavg can be installed with apt-get install python-libavg. 
 
 <h2 class="news">Ubuntu Linux</h2>
 
-<p>libavg itself can be installed with apt-get install python-libavg. However, it needs ffmpeg, which will only be found if
-<tt>deb http://packages.medibuntu.org/ hardy free non-free</tt>
-is added to <tt>/etc/apt/sources.list</tt> first. (The exact url will vary according to the ubuntu release you're using.)</p>
+<p>libavg can be installed with apt-get install python-libavg.
 
 <h2 class="news">Source install</h2>
 

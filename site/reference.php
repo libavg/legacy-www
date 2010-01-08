@@ -17,10 +17,11 @@
   <? include "navi.php"?>
   <? include "showcase.php"?> 
   <div id="content" width="100"><h1>Reference</h1>
-<p>API documentation is based on Epydoc and comes in two flavors: a stable version which reflects the API of the latest released package and a nightly built one which follows the development progress of libavg.
+<p>API reference documentation is based on Epydoc and comes in several flavors: stable versions which document the released packages and a nightly built one which follows the development progress of libavg.
 </p>
 <ul>
-  <li><a href="reference/">Stable reference</a>: currently for release 0.9.0</li>
+  <li><a href="reference/">Reference for 1.0</a></li>
+  <li><a href="reference-0.9.0/">Reference for 0.9.0</a></li>
   <li><a href="http://www.libavg.de:8010/reference/">SVN HEAD reference</a>: nightly build</li>
 </ul>
 </div>
