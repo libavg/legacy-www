@@ -5,7 +5,7 @@
   <div id="navimiddle">
     <div class="naviheadline" align="right"><div align="left" class="navi_h1">Main</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
     <a href="index.php" class="navi">About</a><br>
-    <a href="mission.php" class="navi">Mission</a><br>
+    <a href="concept.php" class="navi">Concept</a><br>
     <a href="features.php" class="navi">Features</a><br>
     <a href="license.php" class="navi">License</a><br>
     <a href="download.php" class="navi">Download</a><br>
