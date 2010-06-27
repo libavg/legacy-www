@@ -24,6 +24,7 @@
  <li>Source code: <a href="libavg-1.0.1.tar.gz">libavg-1.0.1.tar.gz</a></li>
  <li>Mac OS X package - Leopard, Intel only: <a href="libavg-mac-10.5-1.0.1.dmg">libavg-mac-10.5-1.0.1.dmg</a></li>
  <li>Mac OS X package - Snow Leopard: <a href="libavg-mac-10.6-1.0.1.dmg">libavg-mac-10.6-1.0.1.dmg</a></li>
+ <li>Windows Installer: <a href="libavg-1.0.1.win32.exe">libavg-1.0.1.win32.exe</a></li>
 </ul>
     
 <h2 class="news">Subversion Access:</h2>
