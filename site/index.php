@@ -21,6 +21,8 @@
     <p>libavg is a high-level development platform for media-centric applications. It uses an xml-based layout language for screen design and python as scripting language. libavg allows developers and media artists/designers to quickly develop media applications. It has been under constant development since the project's inception in 2003. Since 2007, development is sponsored by <a href="http://www.archimedes-solutions.de">Archimedes Solutions GmbH</a>, which uses libavg for it's exhibits.
     <p>libavg runs on Linux, Mac OS X and Windows. It is open source and licensed under the LGPL. For details, click on License in the menu.</p>
     <h1>News</h1>
+    <h2 class="news">Version 1.5.0 Released <span class="date">, November 6, 2010</span></h2>
+    <p>Version 1.5.0 is done. It's a major milestone and introduces offscreen rendering, GPU-based effects and a multitouch driver model. More details here: <a href="https://www.libavg.de/websvn/filedetails.php?repname=libavg&path=%2Ftags%2Frelease1.5%2FNEWS">NEWS file</a>
     <h2 class="news">Version 1.0.1 Released <span class="date">February 9, 2010</span></h2>
     <p>Version 1.0.1 is ready for download. It's a bugfix release and solves some Intel graphics card issues as well as a few other bugs. For details, see the  <a href="https://www.libavg.de/websvn/filedetails.php?repname=libavg&path=%2Fbranches%2Frelease1.0%2FNEWS">NEWS file</a>
     <h2 class="news">Version 1.0 Released <span class="date">January 8, 2010</span></h2>

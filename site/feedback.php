@@ -29,7 +29,7 @@ Archives of previous postings to the list are here: <br>
 <a href="http://mail.datenhain.de/pipermail/libavg-devel/">http://mail.datenhain.de/pipermail/libavg-devel/</a>
 </p>
 <p>
-If you think you've found a bug, please see <a href="https://www.libavg.de/wiki/index.php/Bug_Reports">https://www.libavg.de/wiki/index.php/Bug_Reports</a>.
+If you think you've found a bug, please see <a href="http://www.libavg.de/wiki/index.php/Bug_Reports">http://www.libavg.de/wiki/index.php/Bug_Reports</a>.
   </div>
   
 </div>

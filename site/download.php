@@ -18,15 +18,17 @@
   <? include "showcase.php"?> 
   <div id="content" width="100"><h1>Download</h1>
     
-<h2 class="news">Version 1.0.1:</h2>
+<h2 class="news">Version 1.5.0:</h2>
 
 <ul>
- <li>Source code: <a href="libavg-1.0.1.tar.gz">libavg-1.0.1.tar.gz</a></li>
- <li>Mac OS X package - Leopard, Intel only: <a href="libavg-mac-10.5-1.0.1.dmg">libavg-mac-10.5-1.0.1.dmg</a></li>
- <li>Mac OS X package - Snow Leopard: <a href="libavg-mac-10.6-1.0.1.dmg">libavg-mac-10.6-1.0.1.dmg</a></li>
- <li>Windows Installer: <a href="libavg-1.0.1.win32.exe">libavg-1.0.1.win32.exe</a></li>
+ <li>Source code: <a href="libavg-1.5.0.tar.gz">libavg-1.5.0.tar.gz</a></li>
+ <li>Mac OS X package - Snow Leopard: <a href="libavg-mac-10.6-1.5.0.dmg">libavg-mac-10.6-1.5.0.dmg</a></li>
+ <li>Windows Installer: <a href="libavg-1.5.0.win32.py25.exe">libavg-1.5.0.win32.py25.exe</a></li>
+ <li>For Windows, you also need the Visual C++ Runtime: <a href="vcredist_x86.exe">vcredist_x86.exe</a>
 </ul>
-    
+
+<p>Installation instructions are <a href="http://www.libavg.de/wiki/index.php/Installing_a_Release">here</a>.
+
 <h2 class="news">Subversion Access:</h2>
 <p>
 Access to the current development source code is available using 
@@ -38,6 +40,15 @@ online is also possible.
 
 <h2 class="news">Older Versions:</h2>
 
+<p>Version 1.0.0:
+
+<ul>
+ <li>Source code: <a href="libavg-1.0.1.tar.gz">libavg-1.0.1.tar.gz</a></li>
+ <li>Mac OS X package - Leopard, Intel only: <a href="libavg-mac-10.5-1.0.1.dmg">libavg-mac-10.5-1.0.1.dmg</a></li>
+ <li>Mac OS X package - Snow Leopard: <a href="libavg-mac-10.6-1.0.1.dmg">libavg-mac-10.6-1.0.1.dmg</a></li>
+ <li>Windows Installer: <a href="libavg-1.0.1.win32.exe">libavg-1.0.1.win32.exe</a></li>
+</ul>
+    
 <p>Version 1.0.0:
 
 <ul>

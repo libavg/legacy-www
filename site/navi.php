@@ -14,7 +14,7 @@
     <div class="naviheadline" align="right"><div align="left" class="navi_h1">Docs</div><img src="images/naviheadline_side.gif" width="40" height="39" alt="" align="middle" ></div>
     <a href="wiki/index.php/Main_Page" class="navi">Wiki</a><br>
     <a href="reference.php" class="navi">Reference</a><br>
-    <a href="install.php" class="navi">Installing</a><br>
+    <a href="http://www.libavg.de/wiki/index.php/Installing_a_Release" class="navi">Installing</a><br>
     <a href="http://www.libavg.de:8010" class="navi">Buildbot</a><br>
     &nbsp;<br>
     <a href="imprint.php" class="navi">Imprint</a> 
