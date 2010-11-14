@@ -22,7 +22,7 @@
 
 <ul>
  <li>Source code: <a href="libavg-1.5.0.tar.gz">libavg-1.5.0.tar.gz</a></li>
- <li>Mac OS X package - Snow Leopard: <a href="libavg-mac-10.6-1.5.0.dmg">libavg-mac-10.6-1.5.0.dmg</a></li>
+ <li>Mac OS X package - Snow Leopard: <a href="libavg-mac-10.6-1.5.1.dmg">libavg-mac-10.6-1.5.1.dmg</a></li>
  <li>Windows Installer: <a href="libavg-1.5.0.win32.py25.exe">libavg-1.5.0.win32.py25.exe</a></li>
  <li>For Windows, you also need the Visual C++ Runtime: <a href="vcredist_x86.exe">vcredist_x86.exe</a>
 </ul>
