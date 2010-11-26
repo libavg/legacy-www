@@ -20,7 +20,8 @@
 <p>API reference documentation is based on Epydoc and comes in several flavors: stable versions which document the released packages and a nightly built one which follows the development progress of libavg.
 </p>
 <ul>
-  <li><a href="reference/">Reference for 1.0</a></li>
+  <li><a href="reference/">Reference for 1.5</a></li>
+  <li><a href="reference-1.0.0/">Reference for 1.0</a></li>
   <li><a href="reference-0.9.0/">Reference for 0.9.0</a></li>
   <li><a href="http://www.libavg.de:8010/reference/">SVN HEAD reference</a>: nightly build</li>
 </ul>
