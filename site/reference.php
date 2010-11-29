@@ -17,7 +17,7 @@
   <? include "navi.php"?>
   <? include "showcase.php"?> 
   <div id="content" width="100"><h1>Reference</h1>
-<p>API reference documentation is based on Epydoc and comes in several flavors: stable versions which document the released packages and a nightly built one which follows the development progress of libavg.
+<p>Welcome to the libavg reference documentation. There are several versions here: Stable versions which document the released packages and a nightly built one which follows the development progress of libavg.
 </p>
 <ul>
   <li><a href="reference/">Reference for 1.5</a></li>
