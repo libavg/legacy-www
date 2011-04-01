@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:py="http://genshi.edgewall.org/"
+  py:strip="">
+
+  <head py:match="head" py:attrs="select('@*')">
+      ${select('*|comment()|text()')}
+      <link rel="stylesheet" type="text/css"
+      href="${href.chrome('site/libavg.css')}" />
+  </head>
+
+  <div py:match="form[@id='search']" py:strip="True">
+  </div>
+
+  <div py:match="div[@id='metanav']" py:attrs="select('@*')">
+      ${select('*|text()')}
+      <form id="search" action="/trac/search" method="get">
+          <div>
+              <label for="proj-search">Search:</label>
+              <input type="text" id="proj-search" name="q" size="18" value="" />
+              <input type="submit" value="Search" />
+          </div>
+      </form>
+  </div>
+
+  <div py:match="div[@id='main']" py:attrs="select('@*')">
+      <div id="sidebar">
+          <p>SIDEBAR</p>
+      </div>
+      <div class='content'>
+          ${select('*|text()')}
+      </div>
+  </div>
+</html>
