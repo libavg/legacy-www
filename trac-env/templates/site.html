@@ -11,18 +11,7 @@
 
   <div py:match="form[@id='search']" py:strip="True">
   </div>
-
-  <div py:match="div[@id='metanav']" py:attrs="select('@*')">
-      ${select('*|text()')}
-      <form id="search" action="/trac/search" method="get">
-          <div>
-              <label for="proj-search">Search:</label>
-              <input type="text" id="proj-search" name="q" size="18" value="" />
-              <input type="submit" value="Search" />
-          </div>
-      </form>
-  </div>
-
+  
   <div py:match="div[@id='main']" py:attrs="select('@*')">
       <div id="sidebar">
           <ul>
@@ -42,7 +31,15 @@
                       <li><a href="/trac/wiki/Development">libavg Development</a></li>
                   </ul>
               </li>
+              <li><a href="/trac/wiki/TitleIndex">Index</a></li>
           </ul>
+          <form id="search" action="/trac/search" method="get">
+              <div>
+                  <label for="proj-search">Search:</label>
+                  <input type="text" id="proj-search" name="q" size="15" value="" />
+                  <input type="submit" value="Search" />
+              </div>
+          </form>
       </div>
       <div class='content'>
           ${select('*|text()')}
