@@ -25,7 +25,24 @@
 
   <div py:match="div[@id='main']" py:attrs="select('@*')">
       <div id="sidebar">
-          <p>SIDEBAR</p>
+          <ul>
+              <li><a href="/trac/wiki/DownLoad">Download</a></li>
+              <li><a href="/trac/wiki/FeatureList">Features</a></li>
+              <li>Documentation
+                  <ul>
+                      <li><a href="/trac/wiki/ReleaseInstall">Installation Guide</a></li>
+                      <li><a href="/trac/wiki/ProgrammersGuide">Programmer's Guide</a></li>
+                      <li><a href="/trac/wiki/RefeRence">Reference</a></li>
+                  </ul>
+              </li>
+              <li>Community
+                  <ul>
+                      <li><a href="/trac/wiki/MailingLists">Mailing Lists</a></li>
+                      <li><a href="/trac/wiki/BugReports">Reporting Bugs</a></li>
+                      <li><a href="/trac/wiki/Development">libavg Development</a></li>
+                  </ul>
+              </li>
+          </ul>
       </div>
       <div class='content'>
           ${select('*|text()')}
