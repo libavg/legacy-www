@@ -12,9 +12,12 @@
   <div py:match="form[@id='search']" py:strip="True">
   </div>
   
+  <div py:match="div[@id='ctxtnav']" py:attrs="select('@*')">
+  </div>
   <div py:match="div[@id='main']" py:attrs="select('@*')">
       <div id="sidebar">
           <ul>
+              <li><a href="/trac/">Home</a></li>
               <li><a href="/trac/wiki/DownLoad">Download</a></li>
               <li><a href="/trac/wiki/FeatureList">Features</a></li>
               <li>Documentation
@@ -44,5 +47,7 @@
       <div class='content'>
           ${select('*|text()')}
       </div>
+  </div>
+  <div py:match="div[@class='trac-modifiedby']" py:attrs="select('@*')">
   </div>
 </html>
