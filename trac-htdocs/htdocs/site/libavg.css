@@ -1,8 +1,8 @@
 body{
     margin:0px;
     /*font: normal 13px Verdana,Arial,'Bitstream Vera Sans',Helvetica,sans-serif;*/
-    font: normal 12px 'Georgia',serif;
-    color: #666;
+    font: normal 14px/21px Arial,Verdana,Helvetica;
+    color: #202020;
     }
 #main{margin:20px;}
 
@@ -15,60 +15,56 @@ body{
 }
 
 #banner {
-    background-color:#3F9BBA;
-    display:block;
+    background-color:#cccccc;
     padding:0px;
+    height:105px;
+    border-width:0px;
 }
-
-#mainnav, #metanav
-{
- font: normal 10px verdana,'Bitstream Vera Sans',helvetica,arial,sans-serif;
- }
 
 /* Main navigation bar */
 #mainnav {
  border-width:0px;
- background-color:black;
+ background-color:#616161;
+ background-image:none;
  margin:0px;
+ padding-bottom:3px;
 }
 
 #mainnav ul {text-align:left; padding:0px; margin-left:20px;}
 
-#mainnav li { padding: .25em 0 }
+#mainnav li { padding:0; font:normal 12px Arial;}
 #mainnav :link, #mainnav :visited {
     color: #fff;
-    background-color:black;
     padding: .2em 20px;
     background-image:none;
     border-width:0px;
 }
 #mainnav :link:hover, #mainnav :visited:hover {
     border-width:0px;
-    background-color: #3F9BBA;
+    background-color: #383838;
 }
 #mainnav .active :link, #mainnav .active :visited {
-    font-weight: bold;
     background-image:none;
-    background-color: #097D98;
+    background-color: #2C2C2C;
     border-width:0px;
 }
 #mainnav .active :link:hover, #mainnav .active :visited:hover {
     background-image:none;
     border-width:0px;
-    background-color: #3F9BBA;
+    background-color: #383838;
 }
 
 
-#metanav {background-color:#3F9BBA; color:#fff; padding:2px 0 6px 0; text-align:right;}
+#metanav {color:#696969; padding:0; position:absolute; top:82px; right:20px; text-align:right; }
 #metanav :link, #metanav :visited {
-    color:#fff;
+    color:#696969;
 }
 #metanav a:link:hover, #metanav a:visited:hover {
-    background-color:#3F9BBA; /* sorry, didn't get it*/
-    border-width:0px;
+    color:#202020;
+    background-color:#CCCCCC;
 }
 #metanav ul{text-align:left; padding:4px; margin-left:20px; display:inline}
-#metanav li {border:0px;}
+#metanav li {border:0px; font:normal 13px Arial;}
 
 #search , #search div{display:inline;}
 #search {margin-right:0px; }
@@ -80,12 +76,11 @@ body{
 /* Header */
 #header hr { display: none }
 #header h1 { margin: 1.5em 0 -1.5em; padding: 0 }
-#header img { border: none; margin:2px; margin-left:20px }
+#header img { border: none; margin:0px; margin-left:20px; margin-top:20px; }
 #header :link, #header :visited, #header :link:hover, #header :visited:hover {
  background: transparent;
  color: #555;
  margin-bottom: 2px;
- border: none;
  padding: 0;
 }
 #header h1 :link:hover, #header h1 :visited:hover { color: #000 }
@@ -121,7 +116,7 @@ table.listing {
 #sidebar {
     float: left;
     padding: 0em 0em 0em 0.8em;
-    margin: 0em 0.5em 1em 0em;
+    margin: 1.5em 0.5em 1em 0em;
     color: #000000;
     background-color: #EEE5E6;
     width: 13em;
