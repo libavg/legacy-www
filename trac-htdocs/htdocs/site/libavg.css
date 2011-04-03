@@ -4,14 +4,19 @@ body{
     font: normal 14px/21px Arial,Verdana,Helvetica;
     color: #202020;
     }
-#main{margin:20px;}
+#main{margin:10px 20px 0 20px;}
 
 /* link color chnager */
 
 :link, :visited, dt em, .milestone .info h2 em,
 #content.build h2.config :link, #content.build h2.config :visited,
 .plugin h3 a {
- color: #3F9BBA;
+ color: #156d00;
+}
+
+:link:hover, :visited:hover {
+ color: #0b3900;
+ background-color:transparent;
 }
 
 #banner {
@@ -63,14 +68,8 @@ body{
     color:#202020;
     background-color:#CCCCCC;
 }
-#metanav ul{text-align:left; padding:4px; margin-left:20px; display:inline}
-#metanav li {border:0px; font:normal 13px Arial;}
-
-#search , #search div{display:inline;}
-#search {margin-right:0px; }
-#search input {padding:0px; background-color:#3F9BBA; border-width:0px; color:#fff;}
-#search input[type='submit'] {padding:0 0px 0 0px;}
-
+#metanav ul{text-align:left; padding:0px; margin:0px; display:inline}
+#metanav li {border:0px; padding-right:0px; padding-left:18px; font:normal 13px Arial;}
 
 
 /* Header */
@@ -87,6 +86,11 @@ body{
 
 #content {
     margin-left: 15em;
+    padding-top: 12px;
+}
+
+#pagepath {
+    font:normal 12px Arial;
 }
 
 #altlinks {
@@ -115,12 +119,36 @@ table.listing {
 
 #sidebar {
     float: left;
-    padding: 0em 0em 0em 0.8em;
-    margin: 1.5em 0.5em 1em 0em;
+    padding: 0 0 10px 0;
+    margin: 33px 5px 0 0;
     color: #000000;
-    background-color: #EEE5E6;
-    width: 13em;
+    background-color: #CCCCCC;
+    width: 14em;
+    font:normal 14px/21px Arial;
 }
+
+#sidebar ul {text-align:left; padding:0px; margin-left:0px; margin-bottom:0px;}
+#sidebar li {padding-left:20px; list-style-type:none;}
+#sidebar :link, #sidebar :visited {color:#935401; }
+#sidebar :link:hover, #sidebar :visited:hover {
+    color:#4a2a00; 
+    background-color:#CCCCCC;
+}
+
+#search , #search div{display:inline;}
+#search {
+    padding:0 0 8px 17px;
+}
+#search input {
+    margin-top:13px;
+    padding:0px; 
+    background-color:#989898; 
+    border-width:0px; 
+    color:#FFFFFF; 
+    font:normal 13px Arial;
+}
+#search input[type='submit'] {padding:0 0px 0 0px;}
+
 
 table.listing thead tr, #info,
 .tickets tr.trac-columns th {background-color:#CEECF2;}
