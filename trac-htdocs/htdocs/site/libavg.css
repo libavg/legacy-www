@@ -91,6 +91,11 @@ body{
 
 #pagepath {
     font:normal 12px Arial;
+    float:none
+}
+
+#pagepath .pathentry {
+    float:none
 }
 
 #altlinks {
