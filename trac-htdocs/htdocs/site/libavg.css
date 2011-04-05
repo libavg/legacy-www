@@ -86,12 +86,15 @@ body{
 
 #content {
     margin-left: 15em;
-    padding-top: 0px;
+    padding-top: 15px;
+}
+
+#ctxtnav {
+    float: right;
 }
 
 #pagepath {
     font:normal 12px Arial;
-    float:none
 }
 
 #pagepath .pathentry {
@@ -227,4 +230,10 @@ h2 {font-size:18px;}
     background:#fffb96;
     border-color:#aaa401;
     color: #827d01;
+}
+
+.blog #sidebar {
+    clear: right;
+    padding: 0.3em 1em;
+    margin: 0;
 }
