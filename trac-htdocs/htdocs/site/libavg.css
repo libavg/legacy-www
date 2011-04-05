@@ -86,7 +86,7 @@ body{
 
 #content {
     margin-left: 15em;
-    padding-top: 12px;
+    padding-top: 0px;
 }
 
 #pagepath {
@@ -122,6 +122,22 @@ table.listing {
     clear: right;
 }
 
+#content.search hr {
+    clear: none;
+}
+
+#content.admin h1 {
+    float: none;
+}
+
+#tabs {
+    clear: none;
+    width: 9em;
+}
+
+#tabcontent {
+    margin-left: 9em;
+}
 #sidebar {
     float: left;
     padding: 0 0 10px 0;
@@ -164,7 +180,7 @@ table.listing thead tr, #info,
 #ticket {background-color:#eee;}
 #ticket .date {color:#999;}
 #ticket table.properties tr {border-bottom:1px dotted #ccc;}
-#ticket table.properties {border-top: 1px solid #ccc;}
+#ticket table.properties {border-top: 1px solid #ccc; clear:right; }
 #ticket .description h3 {border-bottom: 1px solid #ccc;}
 
 #footer {margin:0 20px 0 20px;}
