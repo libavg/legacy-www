@@ -141,7 +141,7 @@ table.listing {
 }
 #search input {
     margin-top:13px;
-    padding:0px; 
+    padding:1px; 
     background-color:#989898; 
     border-width:0px; 
     color:#FFFFFF; 
@@ -180,23 +180,27 @@ table.listing thead tr, #info,
 }
 
 
-h1,h2,h3,h4,h6 {font-family:'DejaVuSansExtraLight'; font-weight:normal; color:#416a7f;}
-
+h1,h2,h3,h4,h6 {
+    font-family:'Arial'; 
+    font-weight:normal; 
+    color:#935401;
+/*    clear: right;*/
+}
+h2 {font-size:18px;}
 
 .notesImportant, .notesInfo, .notesNote {
- display:block;
- padding: 0 20px 0 20px;
- border-width:1px;
- border-style:dotted;}
+ padding: 1px 10px 1px 10px;
+ border-width:0px;
+}
 .notesImportant{
     background: #fcb;
     border-color: #d00;
     color: #900;
 }
 .notesInfo{
-    background:#CEECF2;
+    background:#CCCCCC;
     border-color:#005;
-    color: #097D98;
+    color: #935401;
 }
 .notesNote{
     background:#fffb96;
