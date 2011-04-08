@@ -86,7 +86,13 @@ body{
 
 #content {
     margin-left: 15em;
-    padding-top: 15px;
+    clear: right;
+}
+
+#content.ticket {
+    margin-left: 15em;
+    margin-right: none;
+    width: auto;
 }
 
 #ctxtnav {
@@ -122,6 +128,8 @@ table.listing {
 }
 
 #wikipage {
+    position: relative;
+    top: 7px;
     clear: right;
 }
 
@@ -236,4 +244,8 @@ h2 {font-size:18px;}
     clear: right;
     padding: 0.3em 1em;
     margin: 0;
+}
+
+.blog #blog-main {
+    padding-top: 5px;
 }
