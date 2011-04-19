@@ -95,6 +95,20 @@ body{
     width: auto;
 }
 
+#content.login {
+    margin-top: 33px;
+    position: absolute;
+}
+
+#content.attachment {
+    margin-top: 26px;
+    position: absolute;
+}
+
+#attachment br {
+    clear: none;
+}
+
 #ctxtnav {
     float: right;
 }
