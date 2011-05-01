@@ -9,6 +9,22 @@
       href="${href.chrome('site/libavg.css')}" />
   </head>
 
+  <body  py:match="body" py:attrs="select('@*')">
+    ${select('*|text()')}
+        <!-- Piwik -->
+        <script type="text/javascript">
+        var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.libavg.de/piwik/" : "http://www.libavg.de/piwik/");
+        document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+        </script><script type="text/javascript">
+        try {
+        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+        piwikTracker.trackPageView();
+        piwikTracker.enableLinkTracking();
+        } catch( err ) {}
+        </script><noscript><p><img src="http://www.libavg.de/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+        <!-- End Piwik Tracking Code -->
+  </body> 
+
   <div py:match="form[@id='search']" py:strip="True">
   </div>
   <div py:match="div[@id='main']" py:attrs="select('@*')">
@@ -18,6 +34,7 @@
               <li><a href="/wiki/DownLoad">Download</a></li>
               <li><a href="/wiki/FeatureList">Features</a></li>
               <li><a href="/wiki/Multitouch">Multitouch</a></li>
+              <li><a href="/wiki/Showcase">Showcase</a></li>
               <li>Documentation
                   <ul>
                       <li><a href="/wiki/ReleaseInstall">Installation Guide</a></li>
